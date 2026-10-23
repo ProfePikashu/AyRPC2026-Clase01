@@ -169,6 +169,62 @@ const modules: ModuleItem[] = [
   },
 ];
 
+const moduleMedia: Record<string, string> = {
+  "intro": "/media/modules/01-intro.png",
+  "componentes": "/media/modules/02-componentes.png",
+  "compatibilidad-armado": "/media/modules/03-compatibilidad.png",
+  "sistemas-operativos": "/media/modules/04-sistemas-operativos.gif",
+  "bios-uefi": "/media/modules/05-bios-uefi.png",
+  "drivers-herramientas": "/media/modules/06-drivers-herramientas.png",
+  "microsoldadura-1": "/media/modules/07-microsoldadura-1.png",
+  "microsoldadura-2": "/media/modules/08-microsoldadura-2.gif",
+  "diagnostico": "/media/modules/09-diagnostico.png",
+  "redes": "/media/modules/10-redes.png",
+  "ciberseguridad": "/media/modules/11-ciberseguridad.png",
+  "malware": "/media/modules/12-malware.gif",
+};
+
+function ModuleMedia({
+  id,
+  title,
+}: {
+  id: string;
+  title: string;
+}) {
+  const src = moduleMedia[id];
+
+  if (!src) {
+    return null;
+  }
+
+  const isVideo = /\.(mp4|webm)$/i.test(src);
+
+  return (
+    <div className="modules-media-visual">
+      {isVideo ? (
+        <video
+          key={src}
+          data-testid="module-media"
+          src={src}
+          className="modules-media-asset"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+        />
+      ) : (
+        <img
+          key={src}
+          data-testid="module-media"
+          src={src}
+          alt={`Vista del módulo ${title}`}
+          className="modules-media-asset"
+        />
+      )}
+    </div>
+  );
+}
 export function ModulesScene() {
   const [activeId, setActiveId] = useState(modules[0].id);
   const active = modules.find((item) => item.id === activeId) ?? modules[0];
@@ -261,31 +317,7 @@ export function ModulesScene() {
                 <p data-testid="module-summary">
                   {active.summary}
                 </p>
-
-                <div className="modules-outcomes">
-                  {active.outcomes.map((point, index) => (
-                    <motion.div
-                      key={`${active.id}-${index}`}
-                      className="modules-outcome"
-                      initial={{ opacity: 0, x: -14 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{
-                        delay: 0.08 + index * 0.07,
-                        duration: 0.24,
-                      }}
-                    >
-                      <span>{String(index + 1).padStart(2, "0")}</span>
-                      <strong>{point}</strong>
-                    </motion.div>
-                  ))}
-                </div>
-
-                <div className="modules-media-placeholder">
-                  <span>MEDIA SLOT</span>
-                  <small>
-                    Imagen, GIF, video, esquema, meme o demo.
-                  </small>
-                </div>
+<ModuleMedia id={active.id} title={active.title} />
               </motion.div>
             </AnimatePresence>
           </div>
@@ -294,3 +326,6 @@ export function ModulesScene() {
     </motion.section>
   );
 }
+
+
+

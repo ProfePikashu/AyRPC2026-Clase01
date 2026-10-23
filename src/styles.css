@@ -17355,3 +17355,78 @@ body {
 
 }
 
+
+/* =========================================================
+   MODULOS · OUTCOMES SIN NUMERACION
+   ========================================================= */
+
+.modules-outcome {
+  grid-template-columns: 1fr !important;
+}
+
+.modules-outcome > strong {
+  width: 100%;
+}
+
+
+/* =========================================================
+   MODULOS · TITULO + DESCRIPCION + MEDIA
+   ========================================================= */
+
+.modules-media-inner {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.modules-media-inner h2 {
+  margin: 4px 0 6px !important;
+  flex: 0 0 auto;
+}
+
+.modules-media-inner > p {
+  margin: 0 auto 14px !important;
+  max-width: 920px;
+  line-height: 1.35;
+  flex: 0 0 auto;
+}
+
+/* Las tarjetas desaparecen completamente */
+.modules-outcomes {
+  display: none !important;
+}
+
+/* Media ocupa TODO el resto */
+.modules-media-visual {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  border: none;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(0,245,255,.025),
+      transparent 65%
+    );
+}
+
+.modules-media-asset {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+
+  object-fit: contain;
+  object-position: center;
+}
+

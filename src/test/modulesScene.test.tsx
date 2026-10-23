@@ -43,8 +43,12 @@ describe("Slide módulos", () => {
     );
 
     expect(
-      await screen.findByText(/Secure Boot, CSM y prioridades/i)
+      await screen.findByText(/Firmware, arranque y configuraciones esenciales/i)
     ).toBeTruthy();
+
+    expect(screen.getByTestId("module-media").getAttribute("src")).toBe(
+      "/media/modules/05-bios-uefi.png"
+    );
   });
 
   it("mantiene la columna izquierda compacta y sin texto redundante", () => {
@@ -67,3 +71,4 @@ describe("Slide módulos", () => {
     ).toBeNull();
   });
 });
+
