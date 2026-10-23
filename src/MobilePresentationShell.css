@@ -1,0 +1,33 @@
+﻿.mobile-presentation-shell {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #050914;
+  touch-action: pinch-zoom;
+}
+
+.mobile-presentation-shell-stage {
+  width: 1280px;
+  height: 720px;
+  min-width: 1280px;
+  min-height: 720px;
+  flex: 0 0 1280px;
+  transform-origin: center center;
+}
+
+.mobile-presentation-shell-frame {
+  display: block;
+  width: 1280px;
+  height: 720px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: #050914;
+}

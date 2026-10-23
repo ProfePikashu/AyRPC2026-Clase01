@@ -605,3 +605,14 @@
   }
 
 }
+
+/* ==========================================================
+   TOUCH MOBILE · COURSE FLOW
+   Vertical = scroll del contenedor
+   Horizontal = navegación de slides
+   Pinch = zoom del navegador
+   ========================================================== */
+
+.course-flow-react-canvas .react-flow__pane {
+  touch-action: pan-y pinch-zoom !important;
+}

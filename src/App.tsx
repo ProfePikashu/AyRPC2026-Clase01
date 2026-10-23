@@ -1,5 +1,5 @@
 ﻿import { AnimatePresence, motion } from "motion/react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { class01, type ClassScene } from "./data/class01";
 import "./styles.css";
 import "./components/CourseFlowDiagram.css";
@@ -159,6 +159,9 @@ function App() {
   const [blackout, setBlackout] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
 
+const touchStartX = useRef<number | null>(null);
+  const touchStartY = useRef<number | null>(null);
+
   const scene = class01[current];
 const goNext = () => {
     setCurrent((value) => Math.min(value + 1, class01.length - 1));
@@ -168,7 +171,55 @@ const goNext = () => {
     setCurrent((value) => Math.max(value - 1, 0));
   };
 
-  useEffect(() => {
+  const handleTouchStart = (
+    event: React.TouchEvent<HTMLElement>,
+  ) => {
+    const touch = event.touches[0];
+
+    if (!touch) return;
+
+    touchStartX.current = touch.clientX;
+    touchStartY.current = touch.clientY;
+  };
+
+  const handleTouchEnd = (
+    event: React.TouchEvent<HTMLElement>,
+  ) => {
+    if (
+      touchStartX.current === null ||
+      touchStartY.current === null
+    ) {
+      return;
+    }
+
+    const touch = event.changedTouches[0];
+
+    if (!touch) return;
+
+    const deltaX = touch.clientX - touchStartX.current;
+    const deltaY = touch.clientY - touchStartY.current;
+
+    touchStartX.current = null;
+    touchStartY.current = null;
+
+    const horizontalDistance = Math.abs(deltaX);
+    const verticalDistance = Math.abs(deltaY);
+
+    const isHorizontalSwipe =
+      horizontalDistance >= 60 &&
+      horizontalDistance > verticalDistance * 1.2;
+
+    if (!isHorizontalSwipe) return;
+
+    if (deltaX < 0) {
+      goNext();
+    } else {
+      goPrevious();
+    }
+  };
+
+
+useEffect(() => {
     const handler = (event: KeyboardEvent) => {
       if (!openingFinished) return;
       if (event.key === "ArrowRight" || event.key === " ") {
@@ -222,7 +273,11 @@ const goNext = () => {
   }
 
   return (
-    <main className="presentation">
+    <main
+      className="presentation"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
       <PortraitGuard />
       <div className="background-grid" />
       <div className="background-glow glow-one" />
@@ -302,6 +357,9 @@ const goNext = () => {
 
 
 export default App;
+
+
+
 
 
 
