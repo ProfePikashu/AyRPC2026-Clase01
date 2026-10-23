@@ -1,0 +1,2066 @@
+﻿
+/* ==========================================================
+   AYRPC 2026 · COURSE FLOW FINAL
+
+   GEOMETRÍA:
+   FigJam aprobado por Andy
+
+   ESTÉTICA:
+   presentación AyRPC
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   CANVAS GENERAL
+   ---------------------------------------------------------- */
+
+.course-flow-final .flowchart-grid {
+  width: 100%;
+}
+
+
+.course-flow-final .course-flow-canvas {
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(125px, 1fr)
+    42px
+    minmax(125px, 1fr)
+    42px
+    minmax(135px, 1.05fr);
+
+  column-gap: 8px;
+  row-gap: 11px;
+
+  width: min(100%, 720px);
+
+  margin: 0 auto;
+
+  align-items: center;
+  justify-items: center;
+}
+
+
+/* Los wrappers existen semánticamente,
+   pero sus hijos participan del grid principal */
+
+.course-flow-final .flowchart-attendance-branch,
+.course-flow-final .flowchart-exam-branch,
+.course-flow-final .exam-recovery {
+  display: contents !important;
+}
+
+
+/* ----------------------------------------------------------
+   CAMINO PRINCIPAL
+   ---------------------------------------------------------- */
+
+.course-flow-final .flow-final-main {
+  grid-column: 1;
+
+  justify-self: center;
+
+  width: 100%;
+}
+
+
+/* ----------------------------------------------------------
+   START
+   ---------------------------------------------------------- */
+
+.course-flow-final .flow-final-start {
+  grid-row: 1;
+
+  width: 82px;
+  height: 82px;
+
+  border: 1px solid #00e5ff;
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 2px;
+
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(0,229,255,.11),
+      rgba(2,8,24,.96) 65%
+    );
+
+  box-shadow:
+    0 0 18px rgba(0,229,255,.12),
+    inset 0 0 14px rgba(0,229,255,.05);
+}
+
+
+.course-flow-final .flow-final-start span {
+  font-family: "Orbitron", sans-serif;
+
+  color: #00e5ff;
+
+  font-size: .43rem;
+  font-weight: 900;
+
+  letter-spacing: .12em;
+}
+
+
+.course-flow-final .flow-final-start strong {
+  max-width: 65px;
+
+  font-family: "Orbitron", sans-serif;
+
+  color: #fff;
+
+  font-size: .56rem;
+  line-height: 1.15;
+
+  text-align: center;
+}
+
+
+/* ----------------------------------------------------------
+   FLECHAS PRINCIPALES
+   ---------------------------------------------------------- */
+
+.course-flow-final .flow-final-arrow {
+  height: 24px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #00e5ff;
+
+  font-size: .86rem;
+  line-height: 1;
+
+  text-shadow:
+    0 0 7px rgba(0,229,255,.4);
+}
+
+
+.course-flow-final
+.course-flow-canvas
+> .flow-final-arrow:nth-of-type(2) {
+  grid-row: 2;
+}
+
+
+.course-flow-final
+.course-flow-canvas
+> .flow-final-process:nth-of-type(3) {
+  grid-row: 3;
+}
+
+
+/* ----------------------------------------------------------
+   NODOS RECTANGULARES
+   ---------------------------------------------------------- */
+
+.course-flow-final .flow-final-node {
+  position: relative;
+
+  width: 100%;
+  min-height: 54px;
+
+  padding: 9px 10px;
+
+  box-sizing: border-box;
+
+  border: 1px solid rgba(0,229,255,.72);
+  border-radius: 7px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 3px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,229,255,.07),
+      rgba(2,8,24,.86)
+    );
+
+  box-shadow:
+    0 0 13px rgba(0,229,255,.07);
+}
+
+
+.course-flow-final .flow-final-node > span,
+.course-flow-final .flow-final-node > small {
+  font-family: "Orbitron", sans-serif;
+
+  color: #00e5ff;
+
+  font-size: .38rem;
+  font-weight: 900;
+
+  letter-spacing: .08em;
+
+  text-align: center;
+}
+
+
+.course-flow-final .flow-final-node > strong {
+  font-family: "Orbitron", sans-serif;
+
+  color: #fff;
+
+  font-size: .56rem;
+  font-weight: 800;
+
+  line-height: 1.18;
+
+  text-align: center;
+}
+
+
+/* ----------------------------------------------------------
+   PROCESO NORMAL
+   ---------------------------------------------------------- */
+
+.course-flow-final .flow-final-process {
+  max-width: 150px;
+}
+
+
+/* ----------------------------------------------------------
+   DECISIONES
+   ---------------------------------------------------------- */
+
+.course-flow-final .flow-final-decision {
+  width: 150px;
+  height: 88px;
+
+  padding: 15px 25px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 2px;
+
+  clip-path:
+    polygon(
+      50% 0%,
+      100% 50%,
+      50% 100%,
+      0% 50%
+    );
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(112,48,240,.62),
+      rgba(40,16,88,.94)
+    );
+
+  filter:
+    drop-shadow(
+      0 0 10px rgba(127,72,255,.16)
+    );
+}
+
+
+.course-flow-final .flow-final-decision > span {
+  font-family: "Orbitron", sans-serif;
+
+  color: #00e5ff;
+
+  font-size: .35rem;
+  font-weight: 900;
+
+  letter-spacing: .08em;
+}
+
+
+.course-flow-final .flow-final-decision > strong {
+  max-width: 110px;
+
+  font-family: "Orbitron", sans-serif;
+
+  color: #fff;
+
+  font-size: .48rem;
+  font-weight: 800;
+
+  line-height: 1.1;
+
+  text-align: center;
+}
+
+
+/* ----------------------------------------------------------
+   CHIPS SÍ / NO
+   ---------------------------------------------------------- */
+
+.course-flow-final .flowgrid-chip {
+  width: 25px !important;
+  height: 25px !important;
+
+  min-width: 25px !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  border-radius: 50% !important;
+
+  display: inline-flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  font-family: "Orbitron", sans-serif !important;
+
+  font-size: .38rem !important;
+  font-weight: 900 !important;
+
+  line-height: 1 !important;
+}
+
+
+.course-flow-final .flowgrid-chip.is-yes {
+  border: 1px solid #00e5ff !important;
+
+  color: #00e5ff !important;
+
+  background:
+    rgba(0,229,255,.08) !important;
+
+  box-shadow:
+    0 0 9px rgba(0,229,255,.16);
+}
+
+
+.course-flow-final .flowgrid-chip.is-no {
+  border: 1px solid #ff4069 !important;
+
+  color: #ff6685 !important;
+
+  background:
+    rgba(255,40,90,.08) !important;
+
+  box-shadow:
+    0 0 9px rgba(255,40,90,.13);
+}
+
+
+/* ==========================================================
+   FILAS DEL CAMINO PRINCIPAL
+   ========================================================== */
+
+.course-flow-final
+.course-flow-canvas
+> .flow-final-start {
+  grid-row: 1;
+}
+
+
+.course-flow-final
+.course-flow-canvas
+> .flow-final-arrow:nth-child(2) {
+  grid-row: 2;
+}
+
+
+.course-flow-final
+.course-flow-canvas
+> .flow-final-process:nth-child(3) {
+  grid-row: 3;
+}
+
+
+.course-flow-final
+.course-flow-canvas
+> .flow-final-arrow:nth-child(4) {
+  grid-row: 4;
+}
+
+
+.course-flow-final .attendance-question {
+  grid-row: 5;
+
+  justify-self: center;
+}
+
+
+.course-flow-final
+.course-flow-canvas
+> .flow-final-arrow:nth-child(7) {
+  grid-row: 7;
+}
+
+
+.course-flow-final
+.course-flow-canvas
+> .flow-final-process:nth-child(8) {
+  grid-row: 8;
+}
+
+
+.course-flow-final
+.course-flow-canvas
+> .flow-final-arrow:nth-child(9) {
+  grid-row: 9;
+}
+
+
+.course-flow-final .result-question {
+  grid-row: 10;
+}
+
+
+/* ==========================================================
+   ASISTENCIA
+   ========================================================== */
+
+
+/* SÍ principal + APTO */
+
+.course-flow-final .attendance-primary-yes {
+  grid-column: 1;
+  grid-row: 6;
+
+  width: 100%;
+
+  display: flex !important;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 3px;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+.course-flow-final .attendance-primary-yes::before {
+  content: "";
+
+  width: 2px;
+  height: 10px;
+
+  margin-bottom: -2px;
+
+  background: #00e5ff;
+}
+
+
+.course-flow-final .flow-final-down {
+  height: 17px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #00e5ff;
+
+  font-size: .62rem;
+}
+
+
+.course-flow-final .flow-final-approved {
+  max-width: 145px;
+
+  border-color: #00dca6;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,220,166,.11),
+      rgba(1,28,30,.9)
+    );
+
+  box-shadow:
+    0 0 14px rgba(0,220,166,.09);
+}
+
+
+.course-flow-final .flow-final-approved > span {
+  color: #00e5ff;
+}
+
+
+/* NO principal -> decisión de recuperación */
+
+.course-flow-final .attendance-primary-no {
+  grid-column: 2;
+  grid-row: 5;
+
+  align-self: center;
+}
+
+
+.course-flow-final .flow-final-horizontal {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 4px;
+}
+
+
+.course-flow-final .flow-final-right {
+  color: #00e5ff;
+
+  font-size: .75rem;
+  font-weight: 900;
+}
+
+
+.course-flow-final .flow-final-right.is-danger {
+  color: #ff486e;
+}
+
+
+/* Decisión recuperación */
+
+.course-flow-final .attendance-recovery-decision {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+
+.course-flow-final .flow-final-recovery-decision {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(210,132,0,.62),
+      rgba(55,31,3,.96)
+    );
+
+  filter:
+    drop-shadow(
+      0 0 10px rgba(255,171,0,.14)
+    );
+}
+
+
+.course-flow-final
+.flow-final-recovery-decision > span {
+  color: #ffc44d;
+}
+
+
+/* SÍ recuperación -> vuelve a APTO */
+
+.course-flow-final .attendance-recovery-yes {
+  grid-column: 2;
+  grid-row: 6;
+
+  align-self: center;
+}
+
+
+.course-flow-final .flow-final-return {
+  width: 100%;
+
+  display: grid !important;
+
+  grid-template-columns:
+    1fr
+    auto;
+
+  align-items: center;
+
+  gap: 4px;
+}
+
+
+.course-flow-final .flow-final-return-line,
+.course-flow-final
+.flowgrid-recovery-to-apto.flow-final-return-line {
+  position: relative !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  height: 2px !important;
+
+  margin: 0 !important;
+
+  background: #00e5ff !important;
+
+  box-shadow:
+    0 0 7px rgba(0,229,255,.25);
+
+  transform: none !important;
+}
+
+
+/* punta hacia APTO */
+
+.course-flow-final .flow-final-return-line::before,
+.course-flow-final
+.flowgrid-recovery-to-apto.flow-final-return-line::before {
+  content: "";
+
+  position: absolute !important;
+
+  left: -1px !important;
+  top: 50% !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  transform:
+    translateY(-50%) !important;
+
+  border-top:
+    4px solid transparent !important;
+
+  border-bottom:
+    4px solid transparent !important;
+
+  border-right:
+    7px solid #00e5ff !important;
+
+  background:
+    transparent !important;
+}
+
+
+/* línea vertical desde decisión al SÍ */
+
+.course-flow-final
+.attendance-recovery-yes
+.flowgrid-chip {
+  position: relative;
+}
+
+
+.course-flow-final
+.attendance-recovery-yes
+.flowgrid-chip::before {
+  content: "" !important;
+
+  display: block !important;
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 100%;
+
+  width: 2px;
+  height: 23px;
+
+  transform: translateX(-50%);
+
+  background: #00e5ff;
+}
+
+
+/* NO recuperación -> No apto */
+
+.course-flow-final .attendance-recovery-no {
+  grid-column: 4 / 6;
+  grid-row: 5 / 7;
+
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    auto
+    18px
+    1fr;
+
+  grid-template-rows:
+    1fr
+    1fr;
+
+  align-items: center;
+
+  gap: 3px;
+}
+
+
+.course-flow-final
+.attendance-recovery-no
+.flow-final-negative-top {
+  grid-column: 1 / 3;
+  grid-row: 1;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 4px;
+
+  justify-self: start;
+}
+
+
+.course-flow-final
+.attendance-recovery-no
+.flow-final-failure {
+  grid-column: 3;
+  grid-row: 2;
+
+  align-self: center;
+}
+
+
+/* elbow vertical rojo */
+
+.course-flow-final
+.attendance-recovery-no
+.flow-final-failure::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 100%;
+
+  width: 2px;
+  height: 25px;
+
+  transform: translateX(-50%);
+
+  background: #ff4069;
+}
+
+
+/* ==========================================================
+   RESULTADO / CERTIFICADO
+   ========================================================== */
+
+
+/* SÍ principal -> Certificado */
+
+.course-flow-final .exam-primary-yes {
+  grid-column: 1;
+  grid-row: 11;
+
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 3px;
+}
+
+
+.course-flow-final .exam-primary-yes::before {
+  content: "";
+
+  width: 2px;
+  height: 10px;
+
+  margin-bottom: -2px;
+
+  background: #00e5ff;
+}
+
+
+/* Certificado especial */
+
+.course-flow-final .flow-final-certificate {
+  max-width: 150px;
+
+  border-color: #00e5ff;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(140,65,255,.25),
+      transparent 58%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(0,229,255,.11),
+      rgba(86,25,150,.16),
+      rgba(2,8,24,.96)
+    );
+
+  box-shadow:
+    0 0 20px rgba(0,229,255,.12),
+    0 0 25px rgba(145,65,255,.08);
+
+  overflow: hidden;
+}
+
+
+.course-flow-final
+.flow-final-certificate::after {
+  content: "";
+
+  position: absolute;
+
+  inset: -30%;
+
+  background:
+    linear-gradient(
+      110deg,
+      transparent 38%,
+      rgba(255,255,255,.12) 50%,
+      transparent 62%
+    );
+
+  transform: translateX(-60%);
+
+  pointer-events: none;
+}
+
+
+.course-flow-final
+.flow-final-certificate > span {
+  color: #c88cff;
+}
+
+
+.course-flow-final
+.flow-final-certificate > small {
+  color: #00e5ff;
+
+  font-size: .35rem;
+}
+
+
+/* NO principal -> Recuperatorio */
+
+.course-flow-final .exam-primary-no {
+  grid-column: 2;
+  grid-row: 10;
+}
+
+
+/* Recuperatorio */
+
+.course-flow-final .exam-recovery-card {
+  grid-column: 3;
+  grid-row: 10;
+
+  max-width: 145px;
+
+  border-color: #d99616;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(218,145,15,.13),
+      rgba(42,24,2,.94)
+    );
+}
+
+
+.course-flow-final
+.exam-recovery-card > span {
+  color: #ffc24a;
+}
+
+
+/* decisión recuperatorio */
+
+.course-flow-final .exam-recovery-decision {
+  grid-column: 3;
+  grid-row: 11;
+
+  position: relative;
+}
+
+
+.course-flow-final
+.exam-recovery-decision::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 100%;
+
+  width: 2px;
+  height: 18px;
+
+  transform: translateX(-50%);
+
+  background: #9b7cff;
+}
+
+
+/* SÍ recuperatorio -> certificado */
+
+.course-flow-final .exam-recovery-yes {
+  grid-column: 2;
+  grid-row: 11;
+}
+
+
+/* NO recuperatorio -> sin certificado */
+
+.course-flow-final .exam-recovery-no {
+  grid-column: 4 / 6;
+  grid-row: 11;
+
+  display: grid;
+
+  grid-template-columns:
+    auto
+    18px
+    1fr;
+
+  align-items: center;
+
+  gap: 3px;
+
+  width: 100%;
+}
+
+
+/* ==========================================================
+   ERRORES / SALIDAS
+   ========================================================== */
+
+.course-flow-final .flow-final-failure {
+  min-width: 0;
+
+  border-color: #ff315f;
+
+  background:
+    radial-gradient(
+      circle at 50% 20%,
+      rgba(255,30,78,.15),
+      rgba(45,3,15,.96)
+    );
+
+  box-shadow:
+    0 0 18px rgba(255,35,82,.13);
+}
+
+
+.course-flow-final
+.flow-final-failure > span {
+  color: #ff5075;
+}
+
+
+/* ==========================================================
+   HELPERS
+   ========================================================== */
+
+.course-flow-final .flow-final-sr-only {
+  position: absolute !important;
+
+  width: 1px !important;
+  height: 1px !important;
+
+  padding: 0 !important;
+  margin: -1px !important;
+
+  overflow: hidden !important;
+
+  clip: rect(0,0,0,0) !important;
+
+  white-space: nowrap !important;
+
+  border: 0 !important;
+}
+
+
+/* ==========================================================
+   COMUNIDAD
+   ========================================================== */
+
+.course-flow-final .flowchart-community {
+  width: min(100%, 720px);
+
+  margin: 14px auto 0;
+
+  box-sizing: border-box;
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (max-width: 900px) {
+
+  .course-flow-final .course-flow-canvas {
+    grid-template-columns:
+      minmax(115px, 1fr)
+      36px
+      minmax(115px, 1fr)
+      36px
+      minmax(125px, 1fr);
+
+    column-gap: 5px;
+  }
+
+
+  .course-flow-final .flow-final-decision {
+    width: 135px;
+    height: 82px;
+
+    padding:
+      14px 21px;
+  }
+
+
+  .course-flow-final
+  .flow-final-decision > strong {
+    font-size: .44rem;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   REFLUYE, NO HACE ZOOM
+   ========================================================== */
+
+@media (max-width: 620px) {
+
+  .course-flow-final .course-flow-canvas {
+    display: flex !important;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: 100%;
+  }
+
+
+  .course-flow-final
+  .flowchart-attendance-branch,
+  .course-flow-final
+  .flowchart-exam-branch,
+  .course-flow-final
+  .exam-recovery {
+    display: contents !important;
+  }
+
+
+  .course-flow-final
+  .course-flow-canvas > *,
+  .course-flow-final
+  .attendance-primary-yes,
+  .course-flow-final
+  .attendance-primary-no,
+  .course-flow-final
+  .attendance-recovery-decision,
+  .course-flow-final
+  .attendance-recovery-yes,
+  .course-flow-final
+  .attendance-recovery-no,
+  .course-flow-final
+  .exam-primary-yes,
+  .course-flow-final
+  .exam-primary-no,
+  .course-flow-final
+  .exam-recovery-card,
+  .course-flow-final
+  .exam-recovery-decision,
+  .course-flow-final
+  .exam-recovery-yes,
+  .course-flow-final
+  .exam-recovery-no {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+
+
+  .course-flow-final
+  .attendance-recovery-no {
+    display: flex;
+
+    flex-direction: column;
+
+    height: auto;
+
+    gap: 8px;
+  }
+
+
+  .course-flow-final
+  .attendance-recovery-no
+  .flow-final-negative-top {
+    display: flex;
+  }
+
+
+  .course-flow-final
+  .attendance-recovery-no
+  .flow-final-failure::before,
+  .course-flow-final
+  .attendance-recovery-yes
+  .flowgrid-chip::before,
+  .course-flow-final
+  .exam-recovery-decision::before {
+    display: none !important;
+  }
+
+
+  .course-flow-final
+  .exam-recovery-no {
+    display: flex;
+
+    align-items: center;
+
+    width: min(100%, 280px);
+  }
+
+
+  .course-flow-final
+  .flow-final-return {
+    width: min(100%, 260px);
+  }
+
+}
+
+
+/* ==========================================================
+   COURSE FLOW · POLISH FINAL
+   - conectores continuos
+   - nodos adaptativos
+   - geometría FigJam preservada
+   ========================================================== */
+
+
+/* ==========================================================
+   1. GRID MÁS DETERMINISTA
+   Los conectores ocupan sus propias columnas.
+   ========================================================== */
+
+.course-flow-final .course-flow-canvas {
+  grid-template-columns:
+    minmax(0, 1fr)
+    38px
+    minmax(0, 1fr)
+    38px
+    minmax(0, 1fr) !important;
+
+  width: min(100%, 560px) !important;
+
+  column-gap: 0 !important;
+  row-gap: 10px !important;
+}
+
+
+/* ==========================================================
+   2. FIGURAS ADAPTATIVAS
+   ========================================================== */
+
+.course-flow-final .flow-final-node {
+  width: 100% !important;
+  max-width: none !important;
+
+  min-width: 0 !important;
+  min-height: 58px !important;
+  height: auto !important;
+
+  padding: 10px 12px !important;
+
+  overflow: visible !important;
+}
+
+
+.course-flow-final .flow-final-node > strong,
+.course-flow-final .flow-final-node > small {
+  width: 100%;
+
+  max-width: none !important;
+
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+
+  text-wrap: balance;
+}
+
+
+/* Los rombos ya NO tienen altura fija */
+
+.course-flow-final .flow-final-decision {
+  width: 100% !important;
+  max-width: none !important;
+
+  height: auto !important;
+  min-height: 98px !important;
+
+  padding: 22px 22px !important;
+
+  box-sizing: border-box;
+}
+
+
+.course-flow-final .attendance-question {
+  min-height: 118px !important;
+}
+
+
+.course-flow-final .attendance-recovery-decision {
+  min-height: 108px !important;
+}
+
+
+.course-flow-final .result-question {
+  min-height: 98px !important;
+}
+
+
+.course-flow-final .exam-recovery-decision {
+  min-height: 108px !important;
+}
+
+
+.course-flow-final .flow-final-decision > strong {
+  width: 72% !important;
+
+  max-width: none !important;
+
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+
+  text-wrap: balance;
+
+  line-height: 1.12 !important;
+}
+
+
+/* Rectángulos especiales */
+
+.course-flow-final .flow-final-approved,
+.course-flow-final .flow-final-certificate,
+.course-flow-final .exam-recovery-card,
+.course-flow-final .flow-final-failure {
+  width: 100% !important;
+  max-width: none !important;
+
+  height: auto !important;
+}
+
+
+/* ==========================================================
+   3. FLECHAS VERTICALES DEL CAMINO PRINCIPAL
+   Dejan de ser caracteres ↓ flotando.
+   ========================================================== */
+
+.course-flow-final .flow-final-arrow {
+  position: relative;
+
+  height: 28px !important;
+
+  font-size: 0 !important;
+
+  overflow: visible;
+}
+
+
+.course-flow-final .flow-final-arrow::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: -10px;
+  bottom: -4px;
+
+  width: 2px;
+
+  transform: translateX(-50%);
+
+  background: #00e5ff;
+
+  box-shadow:
+    0 0 7px rgba(0,229,255,.32);
+}
+
+
+.course-flow-final .flow-final-arrow::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -5px;
+
+  width: 0;
+  height: 0;
+
+  transform: translateX(-50%);
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid #00e5ff;
+}
+
+
+/* ==========================================================
+   4. SÍ PRINCIPAL
+   pregunta -> SÍ -> resultado positivo
+   ========================================================== */
+
+.course-flow-final .attendance-primary-yes,
+.course-flow-final .exam-primary-yes {
+  position: relative !important;
+}
+
+
+/* une el rombo superior con el chip SÍ */
+
+.course-flow-final .attendance-primary-yes::before,
+.course-flow-final .exam-primary-yes::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: -10px;
+
+  width: 2px;
+  height: 12px;
+
+  margin: 0 !important;
+
+  transform: translateX(-50%);
+
+  background: #00e5ff;
+
+  box-shadow:
+    0 0 6px rgba(0,229,255,.3);
+}
+
+
+/* SÍ -> APTO / CERTIFICADO */
+
+.course-flow-final .flow-final-down {
+  position: relative;
+
+  display: block !important;
+
+  width: 2px !important;
+  height: 25px !important;
+
+  margin: 0 auto !important;
+
+  font-size: 0 !important;
+
+  background: #00e5ff;
+
+  box-shadow:
+    0 0 6px rgba(0,229,255,.3);
+}
+
+
+.course-flow-final .flow-final-down::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -1px;
+
+  width: 0;
+  height: 0;
+
+  transform: translateX(-50%);
+
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid #00e5ff;
+}
+
+
+/* ==========================================================
+   5. NO PRINCIPAL
+   rombo -> NO -> siguiente rama
+   ========================================================== */
+
+.course-flow-final .attendance-primary-no,
+.course-flow-final .exam-primary-no {
+  position: relative !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  min-height: 28px;
+
+  gap: 0 !important;
+}
+
+
+/* línea completa detrás del chip */
+
+.course-flow-final .attendance-primary-no::before,
+.course-flow-final .exam-primary-no::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  top: 50%;
+
+  height: 2px;
+
+  transform: translateY(-50%);
+
+  background: #ff456d;
+
+  box-shadow:
+    0 0 6px rgba(255,69,109,.22);
+}
+
+
+/* punta hacia la rama derecha */
+
+.course-flow-final .attendance-primary-no::after,
+.course-flow-final .exam-primary-no::after {
+  content: "";
+
+  position: absolute;
+
+  right: -1px;
+  top: 50%;
+
+  width: 0;
+  height: 0;
+
+  transform: translateY(-50%);
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 7px solid #ff456d;
+}
+
+
+.course-flow-final .attendance-primary-no .flowgrid-chip,
+.course-flow-final .exam-primary-no .flowgrid-chip {
+  position: relative;
+
+  z-index: 2;
+
+  background: #071020 !important;
+}
+
+
+/* ya no necesitamos el carácter → */
+
+.course-flow-final
+.attendance-primary-no
+.flow-final-right,
+
+.course-flow-final
+.exam-primary-no
+.flow-final-right {
+  display: none !important;
+}
+
+
+/* ==========================================================
+   6. SÍ DE RECUPERACIÓN -> APTO
+   CODO EXACTO DEL FIGJAM
+   ========================================================== */
+
+.course-flow-final .attendance-recovery-yes {
+  grid-column: 2 / 4 !important;
+  grid-row: 6 !important;
+
+  position: relative !important;
+
+  display: block !important;
+
+  align-self: stretch !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  min-height: 95px;
+
+  pointer-events: none;
+}
+
+
+/* línea horizontal hacia la izquierda */
+
+.course-flow-final
+.attendance-recovery-yes
+.flow-final-return-line {
+  position: absolute !important;
+
+  left: 0 !important;
+  top: 68% !important;
+
+  width: calc(50% + 19px) !important;
+  height: 2px !important;
+
+  margin: 0 !important;
+
+  background: #00e5ff !important;
+}
+
+
+/* flecha entrando a APTO */
+
+.course-flow-final
+.attendance-recovery-yes
+.flow-final-return-line::before {
+  content: "";
+
+  position: absolute !important;
+
+  left: -1px !important;
+  top: 50% !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  transform: translateY(-50%) !important;
+
+  border-top: 5px solid transparent !important;
+  border-bottom: 5px solid transparent !important;
+  border-right: 7px solid #00e5ff !important;
+
+  background: transparent !important;
+}
+
+
+/* bajada desde ¿Recuperás? */
+
+.course-flow-final .attendance-recovery-yes::after {
+  content: "";
+
+  position: absolute;
+
+  left: calc(50% + 19px);
+  top: -10px;
+
+  width: 2px;
+  height: calc(68% + 10px);
+
+  transform: translateX(-50%);
+
+  background: #00e5ff;
+
+  box-shadow:
+    0 0 6px rgba(0,229,255,.25);
+}
+
+
+/* chip SÍ montado sobre esa bajada */
+
+.course-flow-final
+.attendance-recovery-yes
+> .flowgrid-chip {
+  position: absolute !important;
+
+  z-index: 3;
+
+  left: calc(50% + 19px) !important;
+  top: 19px !important;
+
+  transform: translateX(-50%) !important;
+
+  margin: 0 !important;
+
+  pointer-events: auto;
+}
+
+
+/* eliminar pseudo viejo */
+
+.course-flow-final
+.attendance-recovery-yes
+.flowgrid-chip::before,
+
+.course-flow-final
+.attendance-recovery-yes
+.flowgrid-chip::after {
+  display: none !important;
+}
+
+
+/* ==========================================================
+   7. NO DE RECUPERACIÓN -> NO APTO
+   línea derecha + codo hacia abajo
+   ========================================================== */
+
+.course-flow-final .attendance-recovery-no {
+  display: contents !important;
+}
+
+
+/* tramo horizontal de arriba */
+
+.course-flow-final
+.attendance-recovery-no
+.flow-final-negative-top {
+  grid-column: 4 / 6 !important;
+  grid-row: 5 !important;
+
+  position: relative !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  min-height: 40px;
+}
+
+
+.course-flow-final
+.attendance-recovery-no
+.flow-final-negative-top::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 50%;
+
+  width: calc(50% + 19px);
+  height: 2px;
+
+  transform: translateY(-50%);
+
+  background: #ff456d;
+}
+
+
+/* chip NO centrado en su columna de conector */
+
+.course-flow-final
+.attendance-recovery-no
+.flow-final-negative-top
+.flowgrid-chip {
+  position: absolute !important;
+
+  z-index: 3;
+
+  left: 19px;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background: #071020 !important;
+}
+
+
+.course-flow-final
+.attendance-recovery-no
+.flow-final-negative-top
+.flow-final-right {
+  display: none !important;
+}
+
+
+/* No apto va abajo a la derecha */
+
+.course-flow-final
+.attendance-recovery-no
+.flow-final-failure {
+  grid-column: 5 !important;
+  grid-row: 6 !important;
+
+  position: relative;
+
+  align-self: center;
+
+  width: 100% !important;
+}
+
+
+/* bajada roja */
+
+.course-flow-final
+.attendance-recovery-no
+.flow-final-failure::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: -62px;
+
+  width: 2px;
+  height: 55px;
+
+  transform: translateX(-50%);
+
+  background: #ff456d;
+
+  box-shadow:
+    0 0 6px rgba(255,69,109,.22);
+}
+
+
+/* punta entrando al nodo */
+
+.course-flow-final
+.attendance-recovery-no
+.flow-final-failure::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: -8px;
+
+  width: 0;
+  height: 0;
+
+  transform: translateX(-50%);
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid #ff456d;
+}
+
+
+/* ==========================================================
+   8. RECUPERATORIO -> ¿APRUEBA RECUPERATORIO?
+   ========================================================== */
+
+.course-flow-final .exam-recovery-card {
+  position: relative;
+}
+
+
+/* vertical entre las dos figuras */
+
+.course-flow-final .exam-recovery-card::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: 100%;
+
+  width: 2px;
+  height: 12px;
+
+  transform: translateX(-50%);
+
+  background: #9b7cff;
+}
+
+
+.course-flow-final .exam-recovery-decision::before {
+  height: 12px !important;
+
+  bottom: 100% !important;
+}
+
+
+/* ==========================================================
+   9. SÍ RECUPERATORIO -> CERTIFICADO
+   mismo codo que arriba
+   ========================================================== */
+
+.course-flow-final .exam-recovery-yes {
+  grid-column: 2 / 4 !important;
+  grid-row: 11 !important;
+
+  position: relative !important;
+
+  display: block !important;
+
+  align-self: stretch !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  min-height: 100px;
+
+  pointer-events: none;
+}
+
+
+.course-flow-final
+.exam-recovery-yes
+.flow-final-return-line {
+  position: absolute !important;
+
+  left: 0 !important;
+  top: 68% !important;
+
+  width: calc(50% + 19px) !important;
+  height: 2px !important;
+
+  background: #00e5ff !important;
+}
+
+
+/* flecha entrando al certificado */
+
+.course-flow-final
+.exam-recovery-yes
+.flow-final-return-line::before {
+  content: "";
+
+  position: absolute !important;
+
+  left: -1px !important;
+  top: 50% !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  transform: translateY(-50%) !important;
+
+  border-top: 5px solid transparent !important;
+  border-bottom: 5px solid transparent !important;
+  border-right: 7px solid #00e5ff !important;
+
+  background: transparent !important;
+}
+
+
+/* vertical desde el rombo */
+
+.course-flow-final .exam-recovery-yes::after {
+  content: "";
+
+  position: absolute;
+
+  left: calc(50% + 19px);
+  top: -10px;
+
+  width: 2px;
+  height: calc(68% + 10px);
+
+  transform: translateX(-50%);
+
+  background: #00e5ff;
+}
+
+
+/* SÍ */
+
+.course-flow-final
+.exam-recovery-yes
+> .flowgrid-chip {
+  position: absolute !important;
+
+  z-index: 3;
+
+  left: calc(50% + 19px) !important;
+  top: 19px !important;
+
+  transform: translateX(-50%) !important;
+
+  margin: 0 !important;
+
+  background: #071020 !important;
+
+  pointer-events: auto;
+}
+
+
+/* ==========================================================
+   10. NO RECUPERATORIO -> SIN CERTIFICADO
+   ========================================================== */
+
+.course-flow-final .exam-recovery-no {
+  position: relative !important;
+
+  grid-template-columns:
+    38px
+    minmax(0,1fr) !important;
+
+  gap: 0 !important;
+}
+
+
+/* línea completa */
+
+.course-flow-final .exam-recovery-no::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  top: 50%;
+
+  height: 2px;
+
+  transform: translateY(-50%);
+
+  background: #ff456d;
+}
+
+
+/* flecha al resultado negativo */
+
+.course-flow-final .exam-recovery-no::after {
+  content: "";
+
+  position: absolute;
+
+  right: calc(50% - 8px);
+  top: 50%;
+
+  width: 0;
+  height: 0;
+
+  transform: translateY(-50%);
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 7px solid #ff456d;
+}
+
+
+.course-flow-final
+.exam-recovery-no
+> .flowgrid-chip {
+  grid-column: 1;
+
+  z-index: 3;
+
+  justify-self: center;
+
+  background: #071020 !important;
+}
+
+
+.course-flow-final
+.exam-recovery-no
+> .flow-final-right {
+  display: none !important;
+}
+
+
+.course-flow-final
+.exam-recovery-no
+> .flow-final-failure {
+  grid-column: 2;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* ==========================================================
+   11. RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 900px) {
+
+  .course-flow-final .course-flow-canvas {
+    grid-template-columns:
+      minmax(0,1fr)
+      34px
+      minmax(0,1fr)
+      34px
+      minmax(0,1fr) !important;
+
+    width: min(100%, 520px) !important;
+  }
+
+
+  .course-flow-final .flow-final-decision {
+    padding:
+      21px 18px !important;
+  }
+
+
+  .course-flow-final .attendance-question {
+    min-height:
+      122px !important;
+  }
+
+
+  .course-flow-final
+  .attendance-recovery-yes::after,
+  .course-flow-final
+  .exam-recovery-yes::after {
+    left: calc(50% + 17px);
+  }
+
+
+  .course-flow-final
+  .attendance-recovery-yes
+  > .flowgrid-chip,
+
+  .course-flow-final
+  .exam-recovery-yes
+  > .flowgrid-chip {
+    left: calc(50% + 17px) !important;
+  }
+
+
+  .course-flow-final
+  .attendance-recovery-yes
+  .flow-final-return-line,
+
+  .course-flow-final
+  .exam-recovery-yes
+  .flow-final-return-line {
+    width:
+      calc(50% + 17px) !important;
+  }
+
+}
+
+
+/* MOBILE conserva el reflow ya existente */
+
+@media (max-width: 620px) {
+
+  .course-flow-final
+  .attendance-recovery-yes,
+
+  .course-flow-final
+  .exam-recovery-yes {
+    min-height: 45px;
+
+    width: min(100%,260px) !important;
+  }
+
+
+  .course-flow-final
+  .attendance-recovery-yes::after,
+
+  .course-flow-final
+  .exam-recovery-yes::after {
+    display: none;
+  }
+
+
+  .course-flow-final
+  .attendance-recovery-no {
+    display: flex !important;
+  }
+
+}
+

@@ -1,0 +1,607 @@
+﻿
+/* ==========================================================
+   AYRPC · REACT FLOW
+   FigJam = geometría
+   React Flow = conectores
+   AyRPC = estética
+   ========================================================== */
+
+.course-flow-react {
+  width: 100%;
+}
+
+
+.course-flow-react .flowchart-main {
+  width: 100%;
+}
+
+
+.course-flow-react-canvas {
+  position: relative;
+
+  width: 100%;
+  height: 1170px;
+
+  overflow: hidden;
+}
+
+
+.course-flow-react-canvas.is-compact {
+  height: 2050px;
+}
+
+
+/* ----------------------------------------------------------
+   REACT FLOW BASE
+   ---------------------------------------------------------- */
+
+.course-flow-react
+.react-flow {
+  background: transparent !important;
+}
+
+
+.course-flow-react
+.react-flow__renderer,
+.course-flow-react
+.react-flow__viewport {
+  overflow: visible;
+}
+
+
+.course-flow-react
+.react-flow__edge-path {
+  filter:
+    drop-shadow(
+      0 0 3px rgba(0,229,255,.12)
+    );
+}
+
+
+/* Las líneas quedan DETRÁS de nodos y labels */
+
+.course-flow-react
+.react-flow__edges {
+  z-index: 1;
+}
+
+
+.course-flow-react
+.react-flow__nodes {
+  z-index: 3;
+}
+
+
+/* ----------------------------------------------------------
+   NODO
+   ---------------------------------------------------------- */
+
+.course-rf-node {
+  position: relative;
+
+  width: max-content;
+
+  font-family:
+    "Orbitron",
+    sans-serif;
+}
+
+
+.course-rf-node.size-sm {
+  --node-width: 150px;
+}
+
+
+.course-rf-node.size-md {
+  --node-width: 170px;
+}
+
+
+.course-rf-node.size-lg {
+  --node-width: 180px;
+}
+
+
+.course-rf-surface {
+  position: relative;
+
+  width: var(--node-width);
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 4px;
+
+  padding: 12px 14px;
+
+  text-align: center;
+
+  color: #fff;
+
+  overflow: visible;
+}
+
+
+.course-rf-eyebrow {
+  display: block;
+
+  width: 100%;
+
+  font-size: .40rem;
+  line-height: 1.15;
+
+  font-weight: 900;
+
+  letter-spacing: .08em;
+
+  white-space: normal;
+
+  color: #00e5ff;
+}
+
+
+.course-rf-title {
+  display: block;
+
+  width: 100%;
+
+  font-size: .60rem;
+  line-height: 1.18;
+
+  font-weight: 850;
+
+  white-space: normal;
+
+  overflow-wrap: break-word;
+  word-break: normal;
+
+  text-wrap: balance;
+}
+
+
+.course-rf-subtitle {
+  display: block;
+
+  width: 100%;
+
+  font-family:
+    "Exo 2",
+    sans-serif;
+
+  font-size: .46rem;
+  line-height: 1.25;
+
+  color: #9ddfff;
+
+  white-space: normal;
+
+  text-wrap: balance;
+}
+
+
+/* ----------------------------------------------------------
+   START
+   ---------------------------------------------------------- */
+
+.course-rf-node.kind-start
+.course-rf-surface {
+  width: 90px;
+  height: 90px;
+
+  padding: 13px;
+
+  border: 1px solid #00e5ff;
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 50% 38%,
+      rgba(0,229,255,.13),
+      rgba(2,8,24,.97) 65%
+    );
+
+  box-shadow:
+    0 0 16px rgba(0,229,255,.11),
+    inset 0 0 14px rgba(0,229,255,.04);
+}
+
+
+/* ----------------------------------------------------------
+   PROCESOS
+   ---------------------------------------------------------- */
+
+.course-rf-node.kind-process
+.course-rf-surface {
+  min-height: 64px;
+
+  border: 1px solid #00e5ff;
+  border-radius: 7px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,229,255,.075),
+      rgba(2,8,24,.95)
+    );
+
+  box-shadow:
+    0 0 13px rgba(0,229,255,.07);
+}
+
+
+/* APTO */
+
+.course-rf-node.tone-green
+.course-rf-surface {
+  border-color: #00dca6;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,220,166,.12),
+      rgba(1,27,29,.96)
+    );
+
+  box-shadow:
+    0 0 16px rgba(0,220,166,.10);
+}
+
+
+/* RECUPERATORIO */
+
+.course-rf-node.tone-amber.kind-process
+.course-rf-surface {
+  border-color: #e9a500;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(226,151,0,.14),
+      rgba(49,29,2,.97)
+    );
+
+  box-shadow:
+    0 0 15px rgba(235,160,0,.09);
+}
+
+
+.course-rf-node.tone-amber
+.course-rf-eyebrow {
+  color: #ffc34a;
+}
+
+
+/* ----------------------------------------------------------
+   DECISIONES
+   SIN ALTURA FIJA
+   CRECEN CON EL TEXTO
+   ---------------------------------------------------------- */
+
+.course-rf-node.kind-decision
+.course-rf-surface {
+  min-height: 94px;
+
+  padding:
+    28px
+    27px;
+
+  clip-path:
+    polygon(
+      50% 0,
+      100% 50%,
+      50% 100%,
+      0 50%
+    );
+
+  background:
+    linear-gradient(
+      135deg,
+      #5422aa,
+      #24114e
+    );
+
+  filter:
+    drop-shadow(
+      0 0 8px rgba(120,70,255,.18)
+    );
+}
+
+
+.course-rf-node.kind-decision.size-lg
+.course-rf-surface {
+  min-height: 112px;
+
+  padding:
+    31px
+    29px;
+}
+
+
+.course-rf-node.kind-decision
+.course-rf-title {
+  font-size: .53rem;
+
+  line-height: 1.10;
+}
+
+
+.course-rf-node.tone-amber.kind-decision
+.course-rf-surface {
+  background:
+    linear-gradient(
+      135deg,
+      #9d6200,
+      #422600
+    );
+
+  filter:
+    drop-shadow(
+      0 0 8px rgba(235,157,0,.16)
+    );
+}
+
+
+/* ----------------------------------------------------------
+   TERMINALES ROJOS
+   ---------------------------------------------------------- */
+
+.course-rf-node.kind-terminal
+.course-rf-surface {
+  min-height: 67px;
+
+  border: 1px solid #ff315f;
+  border-radius: 8px;
+
+  background:
+    radial-gradient(
+      circle at 50% 15%,
+      rgba(255,40,90,.15),
+      rgba(48,3,17,.97)
+    );
+
+  box-shadow:
+    0 0 16px rgba(255,40,85,.12);
+}
+
+
+.course-rf-node.kind-terminal
+.course-rf-eyebrow {
+  color: #ff5577;
+}
+
+
+/* ----------------------------------------------------------
+   CERTIFICADO
+   ---------------------------------------------------------- */
+
+.course-rf-node.kind-certificate
+.course-rf-surface {
+  min-height: 84px;
+
+  border: 1px solid #00e5ff;
+  border-radius: 8px;
+
+  background:
+    radial-gradient(
+      circle at 50% 0,
+      rgba(143,70,255,.29),
+      transparent 58%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(0,229,255,.13),
+      rgba(89,28,158,.18),
+      rgba(2,8,24,.98)
+    );
+
+  box-shadow:
+    0 0 22px rgba(0,229,255,.14),
+    0 0 28px rgba(143,65,255,.10);
+
+  overflow: hidden;
+}
+
+
+.course-rf-node.kind-certificate
+.course-rf-eyebrow {
+  color: #c887ff;
+}
+
+
+.course-rf-node.kind-certificate
+.course-rf-title {
+  font-size: .70rem;
+}
+
+
+/* brillo */
+
+.course-rf-node.kind-certificate
+.course-rf-surface::after {
+  content: "";
+
+  position: absolute;
+
+  inset: -40%;
+
+  background:
+    linear-gradient(
+      110deg,
+      transparent 38%,
+      rgba(255,255,255,.13) 50%,
+      transparent 62%
+    );
+
+  transform:
+    translateX(-58%);
+
+  pointer-events: none;
+}
+
+
+/* ----------------------------------------------------------
+   HANDLES
+   React Flow conecta acá.
+   Son invisibles.
+   ---------------------------------------------------------- */
+
+.course-rf-handle {
+  width: 7px !important;
+  height: 7px !important;
+
+  min-width: 7px !important;
+  min-height: 7px !important;
+
+  border: 0 !important;
+
+  background: transparent !important;
+
+  opacity: 0 !important;
+
+  pointer-events: none !important;
+}
+
+
+/* ----------------------------------------------------------
+   SÍ / NO SOBRE LAS LÍNEAS
+   El fondo tapa la línea.
+   Nunca vuelve a atravesar el texto.
+   ---------------------------------------------------------- */
+
+.course-rf-edge-label {
+  position: absolute;
+
+  z-index: 20;
+
+  width: 27px;
+  height: 27px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  font-family:
+    "Orbitron",
+    sans-serif;
+
+  font-size: .38rem;
+  line-height: 1;
+
+  font-weight: 900;
+
+  background: #071020;
+
+  pointer-events: none;
+}
+
+
+.course-rf-edge-label.tone-cyan {
+  border: 1px solid #00e5ff;
+
+  color: #00e5ff;
+
+  box-shadow:
+    0 0 10px rgba(0,229,255,.18);
+}
+
+
+.course-rf-edge-label.tone-red {
+  border: 1px solid #ff4168;
+
+  color: #ff6583;
+
+  box-shadow:
+    0 0 10px rgba(255,55,100,.15);
+}
+
+
+.course-rf-edge-label.tone-amber {
+  border: 1px solid #f4a900;
+
+  color: #ffc54c;
+}
+
+
+.course-rf-edge-label.tone-violet {
+  border: 1px solid #9a70ff;
+
+  color: #c3aaff;
+}
+
+
+/* ----------------------------------------------------------
+   TEXTO ACCESIBLE
+   ---------------------------------------------------------- */
+
+.course-rf-sr-only {
+  position: absolute !important;
+
+  width: 1px !important;
+  height: 1px !important;
+
+  padding: 0 !important;
+  margin: -1px !important;
+
+  overflow: hidden !important;
+
+  clip: rect(0,0,0,0) !important;
+
+  white-space: nowrap !important;
+
+  border: 0 !important;
+}
+
+
+/* ----------------------------------------------------------
+   FOOTER
+   ---------------------------------------------------------- */
+
+.course-flow-react
+.flowchart-community {
+  width: min(100%, 620px);
+
+  margin:
+    8px
+    auto
+    0;
+}
+
+
+/* ----------------------------------------------------------
+   MOBILE
+   Los nodos cambian de posición.
+   NO hacemos zoom del diagrama.
+   ---------------------------------------------------------- */
+
+@media (max-width: 620px) {
+
+  .course-flow-react-canvas {
+    height: 2050px;
+  }
+
+
+  .course-rf-node.size-sm {
+    --node-width: 155px;
+  }
+
+
+  .course-rf-node.size-md {
+    --node-width: 170px;
+  }
+
+
+  .course-rf-node.size-lg {
+    --node-width: 180px;
+  }
+
+}

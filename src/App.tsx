@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { class01, type ClassScene } from "./data/class01";
 import "./styles.css";
+import "./components/CourseFlowDiagram.css";
 import { HeroIntro } from "./components/HeroIntro";
 import { OpeningVideo } from "./components/OpeningVideo";
 import { AboutAyrpcScene } from "./components/AboutAyrpcScene";
@@ -301,6 +302,7 @@ const goNext = () => {
 
 
 export default App;
+
 
 
 

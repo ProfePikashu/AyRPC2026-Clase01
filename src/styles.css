@@ -11122,3 +11122,6236 @@ body {
   }
 }
 
+
+/* ==========================================================
+   SLIDE 02 FLASHBACK FULL PANEL
+   ========================================================== */
+
+.about-ayrpc-media.is-flashback {
+  padding: 0;
+  overflow: hidden;
+}
+
+.about-ayrpc-media-inner.is-flashback {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  display: block;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.about-ayrpc-media-inner.is-flashback > section {
+  width: 100%;
+  height: 100%;
+}
+
+/* ==========================================================
+   SLIDE 02 FLASHBACK HEIGHT TUNING
+   ========================================================== */
+
+.about-ayrpc-header {
+  margin-bottom: 10px;
+}
+
+.about-ayrpc-layout {
+  align-items: stretch;
+  min-height: calc(100vh - 185px);
+}
+
+.about-ayrpc-media.is-flashback {
+  padding: 0;
+  overflow: hidden;
+  align-self: stretch;
+  min-height: clamp(420px, 72vh, 760px);
+}
+
+.about-ayrpc-media-inner.is-flashback {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.about-ayrpc-media-inner.is-flashback > section,
+.about-ayrpc-media-inner.is-flashback > section > div,
+.about-ayrpc-media-inner.is-flashback > section > div > div {
+  width: 100%;
+  height: 100%;
+}
+
+/* ==========================================================
+   SLIDE 02 · DESDE CUÁNDO / EVOLUCIÓN AYRPC
+   ========================================================== */
+
+.about-ayrpc-media.is-timeline-chart {
+  overflow: hidden;
+}
+
+.about-ayrpc-media-inner.is-timeline-chart {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: 16px 18px;
+  display: flex;
+}
+
+.ayrpc-evolution {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ayrpc-evolution-header span {
+  display: block;
+  margin-bottom: 3px;
+  color: #00e5ff;
+  font-family: "Orbitron", sans-serif;
+  font-size: .56rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+
+.ayrpc-evolution-header strong {
+  display: block;
+  color: #f8fbff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.35rem;
+  line-height: 1.05;
+}
+
+.ayrpc-evolution-header small {
+  display: block;
+  margin-top: 5px;
+  color: rgba(210,222,242,.68);
+  font-family: "Exo 2", sans-serif;
+  font-size: .78rem;
+}
+
+.ayrpc-evolution-layout {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(270px, .9fr) minmax(0, 1.35fr);
+  gap: 14px;
+}
+
+.ayrpc-evolution-chart {
+  min-height: 0;
+  padding: 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(0,229,255,.15);
+  background: rgba(5,10,18,.78);
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0,1fr));
+  gap: 8px;
+  align-items: end;
+}
+
+.ayrpc-bar {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+.ayrpc-bar-value {
+  min-height: 14px;
+  color: rgba(210,222,242,.62);
+  font-family: "Orbitron", sans-serif;
+  font-size: .48rem;
+  font-weight: 900;
+  letter-spacing: .04em;
+}
+
+.ayrpc-bar-track {
+  width: 100%;
+  flex: 1;
+  min-height: 185px;
+  padding: 7px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.05);
+  background: rgba(8,14,24,.9);
+  display: flex;
+  align-items: end;
+}
+
+.ayrpc-bar-fill {
+  width: 100%;
+  border-radius: 9px 9px 6px 6px;
+  background: linear-gradient(
+    180deg,
+    #00e5ff 0%,
+    #8b5cf6 55%,
+    #ff2d95 100%
+  );
+  box-shadow: 0 0 18px rgba(0,229,255,.14);
+}
+
+.ayrpc-bar-down .ayrpc-bar-fill {
+  background: linear-gradient(
+    180deg,
+    #ffb347 0%,
+    #ff7a18 45%,
+    #ff3d5a 100%
+  );
+  box-shadow: 0 0 22px rgba(255,90,40,.18);
+}
+
+.ayrpc-bar-down .ayrpc-bar-value {
+  color: #ff875c;
+}
+
+.ayrpc-bar-highlight .ayrpc-bar-fill {
+  box-shadow:
+    0 0 24px rgba(0,229,255,.25),
+    0 8px 24px rgba(139,92,246,.24);
+}
+
+.ayrpc-bar-highlight .ayrpc-bar-value {
+  color: #00e5ff;
+}
+
+.ayrpc-bar strong {
+  color: #f8fbff;
+  font-family: "Orbitron", sans-serif;
+  font-size: .68rem;
+}
+
+.ayrpc-evolution-notes {
+  min-height: 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.ayrpc-evolution-note {
+  min-width: 0;
+  padding: 10px 12px;
+  border-radius: 13px;
+  border: 1px solid rgba(255,255,255,.06);
+  background: rgba(6,12,20,.76);
+}
+
+.ayrpc-evolution-note span {
+  display: block;
+  margin-bottom: 2px;
+  color: #00e5ff;
+  font-family: "Orbitron", sans-serif;
+  font-size: .49rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+
+.ayrpc-evolution-note strong {
+  display: block;
+  color: #f8fbff;
+  font-family: "Orbitron", sans-serif;
+  font-size: .77rem;
+  line-height: 1.1;
+}
+
+.ayrpc-evolution-note p {
+  margin: 5px 0 0;
+  color: rgba(210,222,242,.72);
+  font-family: "Exo 2", sans-serif;
+  font-size: .66rem;
+  line-height: 1.25;
+}
+
+.ayrpc-evolution-note.is-down {
+  border-color: rgba(255,112,45,.3);
+  background: rgba(35,13,10,.72);
+}
+
+.ayrpc-evolution-note.is-down span {
+  color: #ff875c;
+}
+
+.ayrpc-evolution-note.is-highlight {
+  border-color: rgba(0,229,255,.28);
+  background: rgba(8,18,32,.88);
+}
+
+@media (max-height: 760px) {
+  .about-ayrpc-media-inner.is-timeline-chart {
+    padding: 12px 14px;
+  }
+
+  .ayrpc-evolution-header strong {
+    font-size: 1.15rem;
+  }
+
+  .ayrpc-evolution-header small {
+    font-size: .69rem;
+  }
+
+  .ayrpc-bar-track {
+    min-height: 145px;
+  }
+
+  .ayrpc-evolution-note {
+    padding: 8px 10px;
+  }
+
+  .ayrpc-evolution-note p {
+    font-size: .61rem;
+  }
+}
+
+/* ==========================================================
+   SLIDE 02 · TIMELINE SAME SIZE AS FLASHBACK
+   ========================================================== */
+
+.about-ayrpc-media.is-timeline-chart {
+  padding: 0;
+  overflow: hidden;
+  align-self: stretch;
+  min-height: clamp(420px, 72vh, 760px);
+}
+
+.about-ayrpc-media-inner.is-timeline-chart {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 100%;
+  margin: 0;
+  padding: 16px 18px;
+}
+
+.ayrpc-evolution {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+
+.ayrpc-evolution-layout {
+  height: 100%;
+  min-height: 0;
+}
+
+.ayrpc-evolution-notes {
+  min-height: 0;
+  overflow: visible;
+}
+
+/* ==========================================================
+   SLIDE 02 · COURSE FLOW
+   ========================================================== */
+
+.about-ayrpc-media.is-course-flow {
+  padding: 0;
+  overflow: hidden;
+  align-self: stretch;
+  min-height: clamp(420px, 72vh, 760px);
+}
+
+.about-ayrpc-media-inner.is-course-flow {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 100%;
+  margin: 0;
+  padding: 14px 16px;
+  display: block;
+}
+
+.ayrpc-course-flow {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ayrpc-course-flow-header {
+  flex: 0 0 auto;
+}
+
+.ayrpc-course-flow-header > span {
+  display: block;
+  margin-bottom: 3px;
+
+  color: #00e5ff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .52rem;
+  font-weight: 900;
+  letter-spacing: .14em;
+}
+
+.ayrpc-course-flow-header > strong {
+  display: block;
+
+  color: #f8fbff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.05;
+}
+
+.ayrpc-course-flow-header > small {
+  display: block;
+  margin-top: 5px;
+
+  color: rgba(210,222,242,.68);
+
+  font-family: "Exo 2", sans-serif;
+  font-size: .72rem;
+}
+
+.ayrpc-course-flow-map {
+  flex: 1;
+  min-height: 0;
+
+  display: grid;
+  grid-template-columns:
+    minmax(0, .9fr)
+    minmax(190px, 1.15fr)
+    minmax(0, .9fr);
+
+  gap: 10px;
+  align-items: center;
+}
+
+/* ============================
+   COLUMNA CENTRAL
+   ============================ */
+
+.ayrpc-flow-spine {
+  position: relative;
+  z-index: 2;
+
+  min-height: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.ayrpc-flow-spine::before {
+  content: "";
+
+  position: absolute;
+  z-index: -1;
+
+  top: 20px;
+  bottom: 20px;
+  left: 50%;
+
+  width: 1px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,229,255,.05),
+      rgba(0,229,255,.55),
+      rgba(139,92,246,.55),
+      rgba(255,45,149,.12)
+    );
+
+  box-shadow: 0 0 12px rgba(0,229,255,.18);
+}
+
+.ayrpc-flow-spine > i {
+  height: 13px;
+
+  color: rgba(0,229,255,.7);
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .7rem;
+  line-height: 13px;
+  text-align: center;
+  font-style: normal;
+}
+
+.ayrpc-flow-yes {
+  align-self: center;
+
+  margin: 1px 0 -1px;
+  padding: 2px 6px;
+
+  border: 1px solid rgba(0,229,255,.25);
+  border-radius: 999px;
+
+  background: rgba(0,229,255,.08);
+  color: #62f3ff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .42rem;
+  font-weight: 900;
+}
+
+/* ============================
+   NODOS
+   ============================ */
+
+.ayrpc-flow-node {
+  position: relative;
+
+  padding: 8px 10px;
+
+  border: 1px solid rgba(0,229,255,.14);
+  border-radius: 11px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0,229,255,.06),
+      rgba(139,92,246,.04)
+    ),
+    rgba(5,11,20,.92);
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,.2),
+    inset 0 1px 0 rgba(255,255,255,.025);
+
+  text-align: center;
+}
+
+.ayrpc-flow-node small {
+  display: block;
+  margin-bottom: 2px;
+
+  color: #00e5ff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .4rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+
+.ayrpc-flow-node strong {
+  display: block;
+
+  color: #f8fbff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .67rem;
+  line-height: 1.12;
+}
+
+.ayrpc-flow-node.is-start {
+  border-color: rgba(0,229,255,.3);
+}
+
+.ayrpc-flow-node.is-decision {
+  border-color: rgba(167,117,255,.34);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(139,92,246,.14),
+      rgba(0,229,255,.04)
+    ),
+    rgba(8,10,24,.94);
+}
+
+.ayrpc-flow-node.is-success {
+  border-color: rgba(0,239,166,.3);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0,239,166,.1),
+      rgba(0,229,255,.04)
+    ),
+    rgba(4,17,18,.92);
+}
+
+.ayrpc-flow-node.is-final {
+  border-color: rgba(0,229,255,.45);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0,229,255,.14),
+      rgba(139,92,246,.14),
+      rgba(255,45,149,.08)
+    ),
+    rgba(6,11,23,.96);
+
+  box-shadow:
+    0 0 22px rgba(0,229,255,.12),
+    0 10px 25px rgba(0,0,0,.25);
+}
+
+.ayrpc-flow-node.is-final strong {
+  font-size: .8rem;
+}
+
+.ayrpc-flow-node.is-final > span {
+  display: block;
+  margin-top: 3px;
+
+  color: rgba(225,232,248,.78);
+
+  font-family: "Exo 2", sans-serif;
+  font-size: .62rem;
+  font-weight: 600;
+}
+
+/* ============================
+   RAMAS LATERALES
+   ============================ */
+
+.ayrpc-flow-side {
+  height: 100%;
+  min-height: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  gap: 12px;
+}
+
+.ayrpc-flow-branch {
+  position: relative;
+
+  padding: 12px;
+
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 14px;
+
+  background: rgba(6,12,21,.78);
+
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.2),
+    inset 0 1px 0 rgba(255,255,255,.025);
+}
+
+.ayrpc-flow-branch > span {
+  display: block;
+  margin-bottom: 4px;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .43rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+
+.ayrpc-flow-branch > strong {
+  display: block;
+
+  color: #f8fbff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .72rem;
+  line-height: 1.12;
+}
+
+.ayrpc-flow-branch > p {
+  margin: 6px 0 0;
+
+  color: rgba(210,222,242,.66);
+
+  font-family: "Exo 2", sans-serif;
+  font-size: .62rem;
+  line-height: 1.25;
+}
+
+.ayrpc-flow-branch.is-recovery {
+  border-color: rgba(255,181,71,.25);
+}
+
+.ayrpc-flow-branch.is-recovery::after {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  right: -11px;
+
+  width: 11px;
+  height: 1px;
+
+  background: rgba(255,181,71,.55);
+}
+
+.ayrpc-flow-branch.is-recovery > span,
+.ayrpc-flow-branch.is-recovery > b {
+  color: #ffc56c;
+}
+
+.ayrpc-flow-branch.is-recovery > b {
+  display: block;
+  margin-top: 7px;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .42rem;
+  letter-spacing: .05em;
+}
+
+.ayrpc-flow-branch.is-danger {
+  border-color: rgba(255,72,96,.28);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,50,80,.08),
+      transparent
+    ),
+    rgba(20,7,12,.82);
+}
+
+.ayrpc-flow-branch.is-danger::before {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  left: -11px;
+
+  width: 11px;
+  height: 1px;
+
+  background: rgba(255,72,96,.55);
+}
+
+.ayrpc-flow-branch.is-danger > span {
+  color: #ff7589;
+}
+
+.ayrpc-flow-branch.is-retry {
+  border-color: rgba(167,117,255,.28);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(139,92,246,.1),
+      transparent
+    ),
+    rgba(10,8,24,.82);
+}
+
+.ayrpc-flow-branch.is-retry::before {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  left: -11px;
+
+  width: 11px;
+  height: 1px;
+
+  background: rgba(167,117,255,.55);
+}
+
+.ayrpc-flow-branch.is-retry > span {
+  color: #b994ff;
+}
+
+/* ============================
+   RESULTADO DEL RECUPERATORIO
+   ============================ */
+
+.ayrpc-flow-retry-results {
+  margin-top: 8px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.ayrpc-flow-retry-results b {
+  padding: 6px;
+
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  font-family: "Exo 2", sans-serif;
+}
+
+.ayrpc-flow-retry-results em {
+  font-family: "Orbitron", sans-serif;
+  font-size: .42rem;
+  font-style: normal;
+}
+
+.ayrpc-flow-retry-results span {
+  font-size: .54rem;
+  line-height: 1.1;
+}
+
+.ayrpc-flow-retry-results .is-pass {
+  border: 1px solid rgba(0,239,166,.18);
+  background: rgba(0,239,166,.06);
+  color: #75ffd0;
+}
+
+.ayrpc-flow-retry-results .is-fail {
+  border: 1px solid rgba(255,72,96,.18);
+  background: rgba(255,72,96,.06);
+  color: #ff8797;
+}
+
+/* ============================
+   COMUNIDAD
+   ============================ */
+
+.ayrpc-flow-community {
+  flex: 0 0 auto;
+
+  padding: 8px 11px;
+
+  border: 1px solid rgba(0,229,255,.15);
+  border-radius: 11px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,229,255,.06),
+      rgba(139,92,246,.07),
+      rgba(255,45,149,.04)
+    ),
+    rgba(5,10,18,.82);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.ayrpc-flow-community span {
+  display: block;
+
+  color: #00e5ff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .4rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+
+.ayrpc-flow-community strong {
+  display: block;
+  margin-top: 2px;
+
+  color: #f8fbff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .65rem;
+}
+
+.ayrpc-flow-community p {
+  margin: 0;
+
+  color: rgba(210,222,242,.68);
+
+  font-family: "Exo 2", sans-serif;
+  font-size: .6rem;
+  text-align: right;
+}
+
+
+/* ============================
+   PANTALLAS BAJAS
+   ============================ */
+
+@media (max-height: 760px) {
+  .about-ayrpc-media-inner.is-course-flow {
+    padding: 10px 12px;
+  }
+
+  .ayrpc-course-flow {
+    gap: 7px;
+  }
+
+  .ayrpc-course-flow-header > strong {
+    font-size: 1.05rem;
+  }
+
+  .ayrpc-course-flow-header > small {
+    font-size: .64rem;
+  }
+
+  .ayrpc-flow-node {
+    padding: 6px 8px;
+  }
+
+  .ayrpc-flow-node strong {
+    font-size: .6rem;
+  }
+
+  .ayrpc-flow-spine > i {
+    height: 10px;
+    line-height: 10px;
+  }
+
+  .ayrpc-flow-branch {
+    padding: 9px;
+  }
+
+  .ayrpc-flow-branch > strong {
+    font-size: .64rem;
+  }
+
+  .ayrpc-flow-branch > p {
+    font-size: .56rem;
+  }
+
+  .ayrpc-flow-community {
+    padding: 6px 9px;
+  }
+}
+
+/* ==========================================================
+   SLIDE 02 · HEADER A LA IZQUIERDA / MÁS ESPACIO PARA MEDIA
+   ========================================================== */
+
+.about-ayrpc-shell {
+  position: relative;
+  height: 100%;
+}
+
+.about-ayrpc-header {
+  position: absolute;
+  top: -18px;
+  left: 34px;
+  width: 31%;
+  margin: 0;
+  z-index: 5;
+  text-align: left;
+}
+
+.about-ayrpc-header > span {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.about-ayrpc-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3.1vw, 3.4rem);
+  line-height: .95;
+  text-align: left;
+}
+
+.about-ayrpc-layout {
+  height: 100%;
+  min-height: 0;
+  padding-top: 0;
+  align-items: stretch;
+}
+
+.about-ayrpc-menu {
+  padding-top: 125px;
+}
+
+.about-ayrpc-media {
+  align-self: stretch;
+  min-height: calc(100vh - 105px);
+}
+
+.about-ayrpc-media-inner {
+  height: 100%;
+}
+
+/* El diagrama aprovecha toda la altura nueva */
+.about-ayrpc-media.is-course-flow,
+.about-ayrpc-media.is-timeline-chart,
+.about-ayrpc-media.is-flashback {
+  min-height: calc(100vh - 105px);
+}
+
+/* Un poquito más de aire arriba dentro del flujo */
+.ayrpc-course-flow-header {
+  padding-top: 2px;
+  padding-bottom: 4px;
+}
+
+@media (max-height: 760px) {
+  .about-ayrpc-header h1 {
+    font-size: 2rem;
+  }
+
+  .about-ayrpc-menu {
+    padding-top: 100px;
+  }
+
+  .about-ayrpc-media,
+  .about-ayrpc-media.is-course-flow,
+  .about-ayrpc-media.is-timeline-chart,
+  .about-ayrpc-media.is-flashback {
+    min-height: calc(100vh - 82px);
+  }
+}
+
+
+
+/* ==========================================================
+   SLIDE 02 · CÓMO / FLOW V2
+   ========================================================== */
+
+.about-ayrpc-media-inner.is-course-flow {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: 12px 16px 14px;
+  display: block;
+}
+
+.ayrpc-course-flow {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.ayrpc-course-flow-header {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.ayrpc-course-flow-header span {
+  display: block;
+  margin-bottom: 3px;
+  color: #00e5ff;
+  font-family: "Orbitron", sans-serif;
+  font-size: .5rem;
+  font-weight: 900;
+  letter-spacing: .14em;
+}
+
+.ayrpc-course-flow-header strong {
+  display: block;
+  color: #f8fbff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.22rem;
+  line-height: 1.05;
+}
+
+.ayrpc-course-flow-header small {
+  display: block;
+  margin-top: 4px;
+  color: rgba(210,222,242,.62);
+  font-family: "Exo 2", sans-serif;
+  font-size: .68rem;
+}
+
+/* ===============================
+   GRID
+   =============================== */
+
+.ayrpc-course-flow-grid {
+  flex: 1;
+  min-height: 0;
+
+  display: grid;
+  grid-template-columns:
+    minmax(185px, .78fr)
+    minmax(320px, 1.18fr)
+    minmax(205px, .88fr);
+
+  grid-template-rows: 1fr auto;
+
+  gap: 9px 12px;
+}
+
+.ayrpc-flow-column {
+  min-width: 0;
+  min-height: 0;
+}
+
+.ayrpc-flow-column-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 78px;
+}
+
+.ayrpc-flow-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.ayrpc-flow-column-right {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  padding-top: 70px;
+}
+
+/* ===============================
+   FLUJO PRINCIPAL
+   =============================== */
+
+.ayrpc-flow-step,
+.ayrpc-flow-decision-mini {
+  width: 100%;
+  padding: 8px 12px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(0,229,255,.18);
+
+  background: rgba(4,14,28,.86);
+
+  text-align: center;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.03),
+    0 6px 16px rgba(0,0,0,.12);
+}
+
+.ayrpc-flow-step span,
+.ayrpc-flow-decision-mini span {
+  display: block;
+  margin-bottom: 2px;
+
+  color: #00e5ff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .4rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+
+.ayrpc-flow-step strong,
+.ayrpc-flow-decision-mini strong {
+  display: block;
+
+  color: #f8fbff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .72rem;
+  line-height: 1.1;
+}
+
+.ayrpc-flow-step-decision {
+  border-color: rgba(139,92,246,.28);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(139,92,246,.12),
+      rgba(0,229,255,.03)
+    ),
+    rgba(12,10,30,.9);
+}
+
+.ayrpc-flow-step-approval {
+  border-color: rgba(0,255,163,.24);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0,255,163,.09),
+      rgba(0,229,255,.025)
+    ),
+    rgba(3,24,20,.9);
+}
+
+/* ===============================
+   CONECTORES
+   =============================== */
+
+.ayrpc-flow-connector {
+  width: 2px;
+  height: 9px;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #00e5ff,
+      #8b5cf6
+    );
+
+  box-shadow: 0 0 8px rgba(0,229,255,.28);
+}
+
+.ayrpc-flow-branch {
+  width: 100%;
+  min-height: 28px;
+
+  padding: 0 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ayrpc-flow-chip {
+  min-width: 32px;
+  min-height: 28px;
+
+  padding: 0 7px;
+
+  border-radius: 999px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .48rem;
+  font-weight: 900;
+}
+
+.ayrpc-flow-chip.is-yes {
+  color: #77ffe9;
+
+  border: 1px solid rgba(0,229,255,.34);
+  background: rgba(0,229,255,.10);
+}
+
+.ayrpc-flow-chip.is-no {
+  color: #ff98a8;
+
+  border: 1px solid rgba(255,61,90,.42);
+  background: rgba(255,61,90,.12);
+}
+
+/* ===============================
+   ¿APRUEBA?
+   Más chico a propósito
+   =============================== */
+
+.ayrpc-flow-decision-mini {
+  width: 72%;
+  padding: 6px 10px;
+
+  border-color: rgba(139,92,246,.38);
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(139,92,246,.18),
+      rgba(16,10,35,.92)
+    );
+}
+
+.ayrpc-flow-decision-mini strong {
+  font-size: .7rem;
+}
+
+/* ===============================
+   CARDS LATERALES
+   =============================== */
+
+.ayrpc-flow-card {
+  width: 100%;
+
+  padding: 11px 13px;
+
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,.08);
+
+  background: rgba(6,12,22,.88);
+}
+
+.ayrpc-flow-card span {
+  display: block;
+  margin-bottom: 4px;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .42rem;
+  font-weight: 900;
+  letter-spacing: .09em;
+}
+
+.ayrpc-flow-card strong {
+  display: block;
+
+  color: #f8fbff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .84rem;
+  line-height: 1.08;
+}
+
+.ayrpc-flow-card p {
+  margin: 6px 0 0;
+
+  color: rgba(210,222,242,.72);
+
+  font-family: "Exo 2", sans-serif;
+  font-size: .62rem;
+  line-height: 1.22;
+}
+
+.ayrpc-flow-card b {
+  display: block;
+  margin-top: 8px;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .48rem;
+  font-weight: 900;
+}
+
+/* Recuperación */
+.ayrpc-flow-card-recovery {
+  border-color: rgba(255,179,71,.28);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,179,71,.08),
+      transparent
+    ),
+    rgba(22,15,7,.9);
+}
+
+.ayrpc-flow-card-recovery span,
+.ayrpc-flow-card-recovery b {
+  color: #ffc265;
+}
+
+/* NO APTO */
+.ayrpc-flow-card-alert {
+  position: relative;
+
+  border-color: rgba(255,61,90,.48);
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(255,61,90,.18),
+      transparent 55%
+    ),
+    rgba(43,5,13,.94);
+}
+
+.ayrpc-flow-card-alert::before {
+  content: "⚠";
+
+  position: absolute;
+  top: 8px;
+  right: 10px;
+
+  color: #ff4966;
+
+  font-size: 1rem;
+
+  filter: drop-shadow(0 0 8px rgba(255,61,90,.55));
+}
+
+.ayrpc-flow-card-alert span {
+  color: #ff7189;
+}
+
+/* Recuperatorio */
+.ayrpc-flow-card-hope {
+  margin-top: 62px;
+
+  border-color: rgba(139,92,246,.34);
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(139,92,246,.20),
+      transparent 62%
+    ),
+    rgba(16,10,40,.92);
+}
+
+.ayrpc-flow-card-hope span,
+.ayrpc-flow-card-hope b {
+  color: #c9b7ff;
+}
+
+/* ===============================
+   RESULTADOS DEL RECUPERATORIO
+   =============================== */
+
+.ayrpc-flow-outcomes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+}
+
+.ayrpc-flow-outcome {
+  padding: 7px 8px;
+
+  border-radius: 10px;
+
+  text-align: center;
+}
+
+.ayrpc-flow-outcome span {
+  display: block;
+  margin-bottom: 2px;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .42rem;
+  font-weight: 900;
+}
+
+.ayrpc-flow-outcome strong {
+  display: block;
+
+  font-family: "Exo 2", sans-serif;
+  font-size: .6rem;
+  line-height: 1.12;
+}
+
+.ayrpc-flow-outcome.is-ok {
+  color: #82ffe9;
+
+  border: 1px solid rgba(0,229,255,.27);
+  background: rgba(0,42,48,.7);
+}
+
+.ayrpc-flow-outcome.is-ko {
+  color: #ff99aa;
+
+  border: 1px solid rgba(255,61,90,.27);
+  background: rgba(52,8,16,.72);
+}
+
+/* ===============================
+   CERTIFICADO GLORIA TOTAL
+   =============================== */
+
+.ayrpc-flow-card-certificate {
+  position: relative;
+  overflow: hidden;
+
+  width: 100%;
+
+  padding: 13px 16px 14px;
+
+  border: 1px solid rgba(0,229,255,.48);
+  border-radius: 17px;
+
+  background:
+    radial-gradient(
+      circle at 50% -30%,
+      rgba(255,255,255,.20),
+      transparent 42%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(0,111,131,.9),
+      rgba(51,25,105,.94) 55%,
+      rgba(113,24,91,.78)
+    );
+
+  text-align: center;
+}
+
+.ayrpc-flow-card-certificate::before {
+  content: "";
+
+  position: absolute;
+
+  inset: -80% -30%;
+
+  background:
+    linear-gradient(
+      115deg,
+      transparent 42%,
+      rgba(255,255,255,.18) 49%,
+      rgba(255,255,255,.33) 50%,
+      rgba(255,255,255,.18) 51%,
+      transparent 58%
+    );
+
+  animation: ayrpcCertificateShine 3.6s linear infinite;
+
+  pointer-events: none;
+}
+
+.ayrpc-flow-card-certificate::after {
+  content: "✦";
+
+  position: absolute;
+
+  top: 8px;
+  right: 12px;
+
+  color: #ffffff;
+
+  font-size: 1.1rem;
+
+  text-shadow:
+    0 0 8px #00e5ff,
+    0 0 18px #8b5cf6;
+
+  animation: ayrpcCertificateStar 1.8s ease-in-out infinite;
+}
+
+.ayrpc-flow-card-certificate span,
+.ayrpc-flow-card-certificate strong,
+.ayrpc-flow-card-certificate p {
+  position: relative;
+  z-index: 2;
+}
+
+.ayrpc-flow-card-certificate span {
+  display: block;
+  margin-bottom: 4px;
+
+  color: #84f9ff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .44rem;
+  font-weight: 900;
+  letter-spacing: .11em;
+}
+
+.ayrpc-flow-card-certificate strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.22rem;
+
+  text-shadow:
+    0 0 12px rgba(0,229,255,.5),
+    0 0 24px rgba(139,92,246,.38);
+}
+
+.ayrpc-flow-card-certificate p {
+  margin: 5px 0 0;
+
+  color: #e7fbff;
+
+  font-family: "Exo 2", sans-serif;
+  font-size: .68rem;
+  font-weight: 600;
+}
+
+@keyframes ayrpcCertificateShine {
+  from {
+    transform: translateX(-55%) rotate(0deg);
+  }
+
+  to {
+    transform: translateX(55%) rotate(0deg);
+  }
+}
+
+@keyframes ayrpcCertificateStar {
+  0%,
+  100% {
+    opacity: .45;
+    transform: scale(.8) rotate(0deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotate(18deg);
+  }
+}
+
+/* ===============================
+   COMUNIDAD
+   =============================== */
+
+.ayrpc-flow-footer {
+  grid-column: 1 / -1;
+
+  padding: 9px 12px;
+
+  border: 1px solid rgba(0,229,255,.14);
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,229,255,.05),
+      rgba(139,92,246,.06)
+    ),
+    rgba(4,14,28,.78);
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.ayrpc-flow-footer span {
+  grid-column: 1 / -1;
+
+  color: #00e5ff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .42rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+
+.ayrpc-flow-footer strong {
+  color: #f8fbff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .74rem;
+}
+
+.ayrpc-flow-footer p {
+  margin: 0;
+
+  color: rgba(210,222,242,.7);
+
+  font-family: "Exo 2", sans-serif;
+  font-size: .61rem;
+
+  text-align: right;
+}
+
+@media (max-height: 760px) {
+  .ayrpc-course-flow-header strong {
+    font-size: 1.05rem;
+  }
+
+  .ayrpc-course-flow-grid {
+    grid-template-columns:
+      minmax(165px, .74fr)
+      minmax(290px, 1.16fr)
+      minmax(185px, .84fr);
+  }
+
+  .ayrpc-flow-column-left {
+    padding-top: 65px;
+  }
+
+  .ayrpc-flow-column-right {
+    padding-top: 60px;
+  }
+
+  .ayrpc-flow-card-hope {
+    margin-top: 48px;
+  }
+
+  .ayrpc-flow-step {
+    padding: 6px 10px;
+  }
+
+  .ayrpc-flow-card {
+    padding: 9px 10px;
+  }
+
+  .ayrpc-flow-card p {
+    font-size: .57rem;
+  }
+
+  .ayrpc-flow-card-certificate {
+    padding: 10px 12px 11px;
+  }
+
+  .ayrpc-flow-card-certificate strong {
+    font-size: 1.05rem;
+  }
+}
+
+/* ==========================================================
+   FLOWCHART V3 REAL
+   ========================================================== */
+
+.about-ayrpc-media-inner.is-course-flow {
+  padding: 10px 14px 12px;
+}
+
+.ayrpc-course-flow {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: 8px;
+}
+
+.ayrpc-course-flow-header {
+  text-align: center;
+}
+
+.ayrpc-course-flow-header strong {
+  font-size: 1.12rem;
+}
+
+.ayrpc-course-flow-header small {
+  font-size: .65rem;
+}
+
+.flowchart-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 550px;
+  overflow: hidden;
+}
+
+.flowchart-lines {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.flowchart-lines marker path {
+  fill: #00e5ff;
+}
+
+.flowchart-lines #flowArrowDanger path {
+  fill: #ff506c;
+}
+
+.flowchart-line {
+  fill: none;
+  stroke: rgba(0,229,255,.72);
+  stroke-width: 2.2;
+  vector-effect: non-scaling-stroke;
+}
+
+.flowchart-line-yes {
+  stroke: #26e5c1;
+}
+
+.flowchart-line-no {
+  stroke: #ff506c;
+}
+
+.flowchart-line-recovery {
+  stroke: #ffb347;
+}
+
+.flowchart-label {
+  font-family: "Orbitron", sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.flowchart-label-yes {
+  fill: #7fffe7;
+}
+
+.flowchart-label-no {
+  fill: #ff8397;
+}
+
+.flowchart-label-recovery {
+  fill: #ffc66b;
+}
+
+/* ============================
+   NODOS
+   ============================ */
+
+.flowchart-node,
+.flowchart-decision {
+  position: absolute;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+.flowchart-node {
+  width: 240px;
+  min-height: 48px;
+  padding: 8px 14px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(0,229,255,.24);
+  background: rgba(4,14,28,.94);
+
+  text-align: center;
+}
+
+.flowchart-node span {
+  display: block;
+  margin-bottom: 3px;
+
+  color: #00e5ff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .38rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+
+.flowchart-node strong {
+  color: #fff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .7rem;
+  line-height: 1.1;
+}
+
+.flowchart-node small {
+  margin-top: 4px;
+
+  color: rgba(220,232,248,.74);
+
+  font-family: "Exo 2", sans-serif;
+  font-size: .57rem;
+  line-height: 1.15;
+}
+
+.flowchart-process {
+  border-radius: 8px;
+}
+
+.flowchart-terminator {
+  border-radius: 999px;
+}
+
+/* ============================
+   POSICIONES
+   ============================ */
+
+.flow-start {
+  left: 50%;
+  top: 4%;
+}
+
+.flow-classes {
+  left: 50%;
+  top: 13%;
+}
+
+.flow-attendance {
+  left: 50%;
+  top: 26%;
+}
+
+.flow-recovery-question {
+  left: 76%;
+  top: 26%;
+}
+
+.flow-exam-ready {
+  left: 50%;
+  top: 46%;
+}
+
+.flow-recovery {
+  left: 76%;
+  top: 46%;
+
+  border-color: rgba(255,179,71,.42);
+  background: rgba(31,21,7,.94);
+}
+
+.flow-recovery span {
+  color: #ffc66b;
+}
+
+.flow-no-exam {
+  left: 91%;
+  top: 46%;
+
+  width: 160px;
+
+  border-color: rgba(255,61,90,.62);
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(255,61,90,.28),
+      transparent 62%
+    ),
+    rgba(47,5,14,.96);
+}
+
+.flow-no-exam span,
+.flow-no-exam strong {
+  color: #ff9baa;
+}
+
+.flow-final-exam {
+  left: 50%;
+  top: 58%;
+}
+
+.flow-pass-question {
+  left: 50%;
+  top: 70%;
+}
+
+.flow-retry {
+  left: 76%;
+  top: 70%;
+
+  width: 205px;
+
+  border-color: rgba(139,92,246,.5);
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(139,92,246,.22),
+      transparent 70%
+    ),
+    rgba(18,10,43,.96);
+}
+
+.flow-retry span {
+  color: #c5afff;
+}
+
+.flow-retry-question {
+  left: 76%;
+  top: 85%;
+}
+
+.flow-certificate {
+  left: 50%;
+  top: 92%;
+
+  width: 270px;
+  min-height: 62px;
+
+  overflow: hidden;
+
+  border-color: rgba(0,229,255,.65);
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(255,255,255,.28),
+      transparent 38%
+    ),
+    linear-gradient(
+      125deg,
+      rgba(0,129,151,.96),
+      rgba(67,32,138,.96) 55%,
+      rgba(154,27,112,.9)
+    );
+}
+
+.flow-certificate::before {
+  content: "";
+
+  position: absolute;
+  inset: -110% -50%;
+
+  background:
+    linear-gradient(
+      115deg,
+      transparent 43%,
+      rgba(255,255,255,.34) 50%,
+      transparent 57%
+    );
+
+  animation: flowCertificateShine 3s linear infinite;
+}
+
+.flow-certificate::after {
+  content: "✦";
+
+  position: absolute;
+  top: 8px;
+  right: 14px;
+
+  color: #fff;
+  font-size: 1.1rem;
+
+  text-shadow:
+    0 0 8px #00e5ff,
+    0 0 18px #8b5cf6;
+
+  animation: flowCertificateStar 1.5s ease-in-out infinite;
+}
+
+.flow-certificate span,
+.flow-certificate strong,
+.flow-certificate small {
+  position: relative;
+  z-index: 2;
+}
+
+.flow-certificate span {
+  color: #96fbff;
+}
+
+.flow-certificate strong {
+  font-size: 1rem;
+
+  text-shadow:
+    0 0 10px rgba(0,229,255,.65),
+    0 0 20px rgba(139,92,246,.45);
+}
+
+.flow-failed {
+  left: 91%;
+  top: 92%;
+
+  width: 165px;
+
+  border-color: rgba(255,61,90,.34);
+  background: rgba(48,7,15,.92);
+}
+
+.flow-failed span,
+.flow-failed strong {
+  color: #ff9baa;
+}
+
+/* ============================
+   ROMBOS REALES
+   ============================ */
+
+.flowchart-decision {
+  width: 170px;
+  height: 90px;
+}
+
+.flowchart-diamond {
+  position: absolute;
+  inset: 0;
+
+  border: 1px solid rgba(139,92,246,.6);
+  border-radius: 7px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(139,92,246,.18),
+      rgba(8,13,33,.97)
+    );
+
+  transform: rotate(45deg);
+
+  box-shadow:
+    0 0 18px rgba(139,92,246,.12),
+    inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+.flowchart-diamond.is-recovery {
+  border-color: rgba(255,179,71,.48);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,179,71,.13),
+      rgba(29,18,7,.97)
+    );
+}
+
+.flowchart-diamond.is-result {
+  width: 140px;
+  height: 76px;
+
+  left: 15px;
+  top: 7px;
+}
+
+.flowchart-diamond-copy {
+  position: absolute;
+
+  inset: -15%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  transform: rotate(-45deg);
+}
+
+.flowchart-diamond-copy span {
+  margin-bottom: 3px;
+
+  color: #00e5ff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .35rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+
+.flowchart-diamond.is-recovery
+.flowchart-diamond-copy span {
+  color: #ffc66b;
+}
+
+.flowchart-diamond-copy strong {
+  max-width: 140px;
+
+  color: #fff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .55rem;
+  line-height: 1.12;
+}
+
+/* ============================
+   COMUNIDAD FUERA DEL FLUJO
+   ============================ */
+
+.flowchart-community {
+  min-height: 48px;
+
+  padding: 8px 13px;
+
+  border: 1px dashed rgba(0,229,255,.24);
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,229,255,.05),
+      rgba(139,92,246,.06)
+    );
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.flowchart-community span {
+  display: block;
+
+  color: #00e5ff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .37rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+
+.flowchart-community strong {
+  color: #fff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .68rem;
+}
+
+.flowchart-community p {
+  margin: 0;
+
+  color: rgba(220,232,248,.7);
+
+  font-family: "Exo 2", sans-serif;
+  font-size: .58rem;
+}
+
+/* ============================
+   GLORIA
+   ============================ */
+
+@keyframes flowCertificateShine {
+  from {
+    transform: translateX(-55%);
+  }
+
+  to {
+    transform: translateX(55%);
+  }
+}
+
+@keyframes flowCertificateStar {
+  0%,
+  100% {
+    opacity: .45;
+    transform: scale(.8) rotate(0deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.25) rotate(20deg);
+  }
+}
+
+/* ============================
+   ALTURA MENOR
+   ============================ */
+
+@media (max-height: 760px) {
+  .flowchart-stage {
+    min-height: 510px;
+  }
+
+  .flowchart-node {
+    width: 220px;
+    padding: 6px 10px;
+  }
+
+  .flowchart-node strong {
+    font-size: .63rem;
+  }
+
+  .flowchart-decision {
+    width: 155px;
+    height: 82px;
+  }
+
+  .flowchart-diamond-copy strong {
+    max-width: 128px;
+    font-size: .5rem;
+  }
+
+  .flow-no-exam,
+  .flow-failed {
+    width: 150px;
+  }
+
+  .flow-certificate {
+    width: 250px;
+  }
+}
+
+
+/* ==========================================================
+   FLOWCHART V3 · FINAL GEOMETRY FIX
+   ========================================================== */
+
+.flowchart-stage {
+  min-height: 0;
+  height: 100%;
+  overflow: visible;
+}
+
+/* Subimos los finales para que respiren antes de Comunidad */
+.flow-certificate {
+  top: 89%;
+}
+
+.flow-failed {
+  left: 88%;
+  top: 89%;
+}
+
+.flow-no-exam {
+  left: 88%;
+}
+
+/* Recuperatorio y decisión un toque hacia adentro */
+.flow-retry {
+  left: 74%;
+}
+
+.flow-retry-question {
+  left: 74%;
+}
+
+/* Recuperación superior también más contenida */
+.flow-recovery-question,
+.flow-recovery {
+  left: 74%;
+}
+
+/* La comunidad conserva su propia franja sin tapar el final */
+.flowchart-community {
+  position: relative;
+  z-index: 8;
+  margin-top: 6px;
+}
+
+@media (max-height: 760px) {
+  .flowchart-stage {
+    min-height: 0;
+  }
+
+  .flow-certificate,
+  .flow-failed {
+    top: 87%;
+  }
+}
+
+/* ==========================================================
+   FLOWCHART V4 · DESENCIMADO REAL
+   ========================================================== */
+
+/* Los rombos dejan de ser rectángulos rotados.
+   Ahora su tamaño visual ES su tamaño real. */
+.flowchart-decision {
+  width: 190px;
+  height: 86px;
+}
+
+.flowchart-diamond,
+.flowchart-diamond.is-result {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+  left: 0;
+  top: 0;
+
+  transform: none;
+
+  clip-path: polygon(
+    50% 0%,
+    100% 50%,
+    50% 100%,
+    0% 50%
+  );
+
+  border: 0;
+  border-radius: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(139,92,246,.30),
+      rgba(9,13,34,.98)
+    );
+
+  box-shadow: none;
+}
+
+/* Borde visual del rombo */
+.flowchart-diamond::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+
+  clip-path: inherit;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(139,92,246,.18),
+      rgba(8,13,33,.98)
+    );
+
+  z-index: 0;
+}
+
+.flowchart-diamond.is-recovery {
+  background: rgba(255,179,71,.72);
+}
+
+.flowchart-diamond.is-recovery::before {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,179,71,.18),
+      rgba(30,18,7,.98)
+    );
+}
+
+.flowchart-diamond-copy {
+  position: absolute;
+  inset: 0;
+
+  padding: 12px 28px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transform: none;
+
+  z-index: 2;
+}
+
+.flowchart-diamond-copy strong {
+  max-width: 135px;
+  font-size: .52rem;
+  line-height: 1.08;
+}
+
+
+/* ==========================================================
+   REPARTO VERTICAL NUEVO
+   ========================================================== */
+
+.flow-start {
+  top: 4%;
+}
+
+.flow-classes {
+  top: 14%;
+}
+
+.flow-attendance,
+.flow-recovery-question {
+  top: 27%;
+}
+
+.flow-exam-ready,
+.flow-recovery,
+.flow-no-exam {
+  top: 43%;
+}
+
+.flow-final-exam {
+  top: 54%;
+}
+
+.flow-pass-question,
+.flow-retry {
+  top: 66%;
+}
+
+.flow-retry-question {
+  top: 78%;
+}
+
+/* Finales bastante arriba de Comunidad */
+.flow-certificate,
+.flow-failed {
+  top: 89%;
+}
+
+
+/* ==========================================================
+   HORIZONTAL · TODO ADENTRO DEL PANEL
+   ========================================================== */
+
+.flow-attendance,
+.flow-exam-ready,
+.flow-final-exam,
+.flow-pass-question,
+.flow-certificate {
+  left: 48%;
+}
+
+.flow-recovery-question,
+.flow-recovery,
+.flow-retry,
+.flow-retry-question {
+  left: 73%;
+}
+
+.flow-no-exam,
+.flow-failed {
+  left: 87%;
+}
+
+.flow-no-exam {
+  width: 150px;
+}
+
+.flow-failed {
+  width: 175px;
+}
+
+
+/* ==========================================================
+   NODOS PRINCIPALES MÁS COMPACTOS
+   ========================================================== */
+
+.flowchart-node {
+  min-height: 44px;
+  padding: 6px 12px;
+}
+
+.flowchart-process {
+  width: 220px;
+}
+
+.flow-start {
+  width: 205px;
+}
+
+.flow-exam-ready,
+.flow-final-exam {
+  width: 220px;
+}
+
+.flow-recovery {
+  width: 205px;
+}
+
+.flow-retry {
+  width: 190px;
+}
+
+
+/* ==========================================================
+   CERTIFICADO · GLORIA SIN INVADIR COMUNIDAD
+   ========================================================== */
+
+.flow-certificate {
+  width: 240px;
+  min-height: 54px;
+  padding: 7px 14px;
+}
+
+.flow-certificate strong {
+  font-size: .9rem;
+}
+
+.flow-certificate small {
+  font-size: .5rem;
+}
+
+
+/* ==========================================================
+   COMUNIDAD
+   ========================================================== */
+
+.flowchart-community {
+  min-height: 44px;
+  margin-top: 14px;
+  flex-shrink: 0;
+}
+
+
+/* ==========================================================
+   ALTURA REAL
+   ========================================================== */
+
+.flowchart-stage {
+  min-height: 0;
+  height: 100%;
+  overflow: visible;
+}
+
+@media (max-height: 760px) {
+  .flowchart-decision {
+    width: 170px;
+    height: 76px;
+  }
+
+  .flowchart-diamond-copy {
+    padding: 10px 24px;
+  }
+
+  .flowchart-diamond-copy strong {
+    max-width: 120px;
+    font-size: .47rem;
+  }
+
+  .flow-certificate,
+  .flow-failed {
+    top: 87%;
+  }
+}
+
+/* ==========================================================
+   FLOWCHART V5 · DISTRIBUCIÓN FINAL
+   ========================================================== */
+
+/* Tronco principal */
+.flow-start,
+.flow-classes,
+.flow-attendance,
+.flow-exam-ready,
+.flow-final-exam,
+.flow-pass-question,
+.flow-certificate {
+  left: 40%;
+}
+
+/* Rama de recuperación */
+.flow-recovery-question,
+.flow-recovery,
+.flow-retry,
+.flow-retry-question {
+  left: 65%;
+}
+
+/* Salidas negativas */
+.flow-no-exam,
+.flow-failed {
+  left: 85%;
+}
+
+
+/* ============================
+   SEPARACIÓN VERTICAL
+   ============================ */
+
+.flow-start {
+  top: 4%;
+}
+
+.flow-classes {
+  top: 14%;
+}
+
+.flow-attendance,
+.flow-recovery-question {
+  top: 27%;
+}
+
+.flow-exam-ready,
+.flow-recovery,
+.flow-no-exam {
+  top: 43%;
+}
+
+.flow-final-exam {
+  top: 54%;
+}
+
+.flow-pass-question,
+.flow-retry {
+  top: 66%;
+}
+
+.flow-retry-question {
+  top: 78%;
+}
+
+.flow-certificate,
+.flow-failed {
+  top: 89%;
+}
+
+
+/* ============================
+   TAMAÑOS PARA QUE NO CHOQUEN
+   ============================ */
+
+.flowchart-process {
+  width: 215px;
+}
+
+.flow-start {
+  width: 200px;
+}
+
+.flow-recovery {
+  width: 190px;
+}
+
+.flow-retry {
+  width: 180px;
+}
+
+.flow-no-exam {
+  width: 140px;
+}
+
+.flow-failed {
+  width: 160px;
+}
+
+.flow-certificate {
+  width: 225px;
+}
+
+
+/* ============================
+   MÁS AIRE ENTRE RAMAS
+   ============================ */
+
+.flow-recovery-question {
+  width: 175px;
+  height: 80px;
+}
+
+.flow-retry-question {
+  width: 175px;
+  height: 80px;
+}
+
+.flow-attendance {
+  width: 185px;
+  height: 82px;
+}
+
+.flow-pass-question {
+  width: 165px;
+  height: 76px;
+}
+
+
+/* ============================
+   CERTIFICADO
+   ============================ */
+
+.flow-certificate {
+  min-height: 54px;
+  padding: 7px 12px;
+}
+
+
+/* ============================
+   PANEL
+   ============================ */
+
+.flowchart-stage {
+  overflow: visible;
+}
+
+@media (max-height: 760px) {
+  .flow-start,
+  .flow-classes,
+  .flow-attendance,
+  .flow-exam-ready,
+  .flow-final-exam,
+  .flow-pass-question,
+  .flow-certificate {
+    left: 39%;
+  }
+
+  .flow-recovery-question,
+  .flow-recovery,
+  .flow-retry,
+  .flow-retry-question {
+    left: 64%;
+  }
+
+  .flow-no-exam,
+  .flow-failed {
+    left: 84%;
+  }
+}
+
+/* ==========================================================
+   FLOWCHART V6 · GRID RESPONSIVE REAL
+   Sin coordenadas absolutas
+   ========================================================== */
+
+.about-ayrpc-media-inner.is-course-flow {
+  overflow: auto;
+  padding: 12px 16px;
+}
+
+.ayrpc-course-flow {
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ayrpc-course-flow-header {
+  flex: none;
+  text-align: center;
+}
+
+.ayrpc-course-flow-header span {
+  display: block;
+  margin-bottom: 3px;
+
+  color: #00e5ff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .48rem;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+
+.ayrpc-course-flow-header strong {
+  display: block;
+
+  color: #fff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.05;
+}
+
+.ayrpc-course-flow-header small {
+  display: block;
+  margin-top: 5px;
+
+  color: rgba(210,222,242,.68);
+
+  font-family: "Exo 2", sans-serif;
+  font-size: .68rem;
+}
+
+
+/* ==========================================================
+   CONTENEDOR
+   ========================================================== */
+
+.flowchart-grid {
+  width: 100%;
+  min-width: 0;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+
+  justify-items: center;
+}
+
+.flowchart-main {
+  width: min(100%, 880px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 6px;
+}
+
+
+/* ==========================================================
+   NODOS
+   ========================================================== */
+
+.flowgrid-node {
+  position: relative;
+
+  width: min(100%, 310px);
+  min-height: 52px;
+
+  padding: 9px 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgba(0,229,255,.26);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0,229,255,.035),
+      rgba(139,92,246,.025)
+    ),
+    rgba(4,14,28,.94);
+
+  text-align: center;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.03),
+    0 8px 18px rgba(0,0,0,.13);
+}
+
+.flowgrid-node > span {
+  display: block;
+  margin-bottom: 3px;
+
+  color: #00e5ff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .39rem;
+  font-weight: 900;
+  letter-spacing: .09em;
+}
+
+.flowgrid-node > strong {
+  color: #fff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .76rem;
+  line-height: 1.12;
+}
+
+.flowgrid-node > small {
+  margin-top: 4px;
+
+  color: rgba(220,232,248,.72);
+
+  font-family: "Exo 2", sans-serif;
+  font-size: .58rem;
+  line-height: 1.18;
+}
+
+.flowgrid-process {
+  border-radius: 10px;
+}
+
+.flowgrid-terminal {
+  border-radius: 999px;
+}
+
+
+/* ==========================================================
+   DECISIONES
+   ========================================================== */
+
+.flowgrid-decision {
+  width: min(100%, 300px);
+  min-height: 90px;
+
+  padding: 18px 45px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  clip-path: polygon(
+    50% 0%,
+    100% 50%,
+    50% 100%,
+    0% 50%
+  );
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(139,92,246,.38),
+      rgba(15,12,42,.98)
+    );
+
+  text-align: center;
+}
+
+.flowgrid-decision > span {
+  color: #00e5ff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .36rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+
+.flowgrid-decision > strong {
+  max-width: 190px;
+  margin-top: 3px;
+
+  color: #fff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .58rem;
+  line-height: 1.1;
+}
+
+.flowgrid-decision.is-recovery {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,179,71,.65),
+      rgba(43,24,5,.98)
+    );
+}
+
+.flowgrid-decision.is-recovery > span {
+  color: #ffe0a1;
+}
+
+.flowgrid-decision.is-result {
+  width: min(100%, 240px);
+  min-height: 76px;
+}
+
+
+/* ==========================================================
+   CONECTORES
+   ========================================================== */
+
+.flowgrid-arrow {
+  color: #00e5ff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1;
+
+  text-shadow: 0 0 8px rgba(0,229,255,.42);
+}
+
+.flowgrid-arrow.is-small {
+  margin: 2px 0;
+  font-size: .82rem;
+}
+
+.flowgrid-arrow.is-danger {
+  color: #ff5873;
+
+  text-shadow: 0 0 8px rgba(255,61,90,.42);
+}
+
+
+/* ==========================================================
+   RAMIFICACIONES
+   ========================================================== */
+
+.flowchart-attendance-branch,
+.flowchart-exam-branch {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns:
+    minmax(150px, .65fr)
+    minmax(320px, 1.35fr);
+
+  gap: 24px;
+
+  align-items: start;
+
+  margin: 2px 0 6px;
+}
+
+.flowgrid-path {
+  min-width: 0;
+
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 14px;
+}
+
+.flowgrid-direct-path {
+  min-height: 100%;
+  justify-content: flex-start;
+
+  border: 1px dashed rgba(0,229,255,.16);
+  background: rgba(0,229,255,.025);
+}
+
+.flowgrid-recovery-path {
+  border: 1px dashed rgba(139,92,246,.16);
+  background: rgba(139,92,246,.025);
+}
+
+
+/* ==========================================================
+   SÍ / NO
+   ========================================================== */
+
+.flowgrid-chip {
+  min-width: 42px;
+
+  padding: 5px 9px;
+
+  border-radius: 999px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .55rem;
+  font-weight: 900;
+}
+
+.flowgrid-chip.is-yes {
+  color: #82ffe9;
+
+  border: 1px solid rgba(0,229,255,.38);
+  background: rgba(0,229,255,.10);
+}
+
+.flowgrid-chip.is-no {
+  color: #ff9bac;
+
+  border: 1px solid rgba(255,61,90,.38);
+  background: rgba(255,61,90,.10);
+}
+
+.flowgrid-path-line {
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  color: #00e5ff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.1rem;
+}
+
+.flowgrid-path > small {
+  color: rgba(220,232,248,.62);
+
+  font-family: "Exo 2", sans-serif;
+  font-size: .58rem;
+}
+
+
+/* ==========================================================
+   SUBRAMAS
+   ========================================================== */
+
+.flowgrid-choice-pair {
+  width: 100%;
+
+  margin-top: 8px;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 10px;
+}
+
+.flowgrid-choice {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flowgrid-choice .flowgrid-node {
+  width: 100%;
+}
+
+
+/* ==========================================================
+   RECUPERACIÓN
+   ========================================================== */
+
+.flowgrid-node.is-recovery {
+  border-color: rgba(255,179,71,.38);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,179,71,.11),
+      rgba(34,21,6,.96)
+    );
+}
+
+.flowgrid-node.is-recovery > span {
+  color: #ffc76e;
+}
+
+.flowgrid-merge-label {
+  margin-top: 8px;
+
+  color: #ffc76e;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .48rem;
+  font-weight: 900;
+}
+
+
+/* ==========================================================
+   NO APTO
+   ========================================================== */
+
+.flowgrid-node.is-danger {
+  border-color: rgba(255,61,90,.55);
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(255,61,90,.22),
+      transparent 70%
+    ),
+    rgba(43,6,14,.96);
+
+  animation: flowgridCritical 1.7s ease-in-out infinite;
+}
+
+.flowgrid-node.is-danger > span,
+.flowgrid-node.is-danger > strong {
+  color: #ff9bac;
+}
+
+@keyframes flowgridCritical {
+  0%,
+  100% {
+    box-shadow: 0 0 8px rgba(255,61,90,.08);
+  }
+
+  50% {
+    box-shadow: 0 0 24px rgba(255,61,90,.32);
+  }
+}
+
+
+/* ==========================================================
+   APTO
+   ========================================================== */
+
+.flowgrid-node.is-approved {
+  border-color: rgba(0,244,180,.35);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0,244,180,.09),
+      rgba(4,30,25,.94)
+    );
+}
+
+
+/* ==========================================================
+   RECUPERATORIO
+   ========================================================== */
+
+.flowgrid-node.is-hope {
+  border-color: rgba(139,92,246,.46);
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(139,92,246,.20),
+      transparent 70%
+    ),
+    rgba(18,10,43,.96);
+
+  animation: flowgridHope 2.3s ease-in-out infinite;
+}
+
+.flowgrid-node.is-hope > span {
+  color: #c8b6ff;
+}
+
+@keyframes flowgridHope {
+  0%,
+  100% {
+    box-shadow: 0 0 8px rgba(139,92,246,.08);
+  }
+
+  50% {
+    box-shadow: 0 0 24px rgba(139,92,246,.24);
+  }
+}
+
+
+/* ==========================================================
+   FALLO FINAL
+   ========================================================== */
+
+.flowgrid-node.is-failed {
+  border-color: rgba(255,61,90,.38);
+
+  background: rgba(48,7,15,.92);
+}
+
+.flowgrid-node.is-failed > span,
+.flowgrid-node.is-failed > strong {
+  color: #ff9bac;
+}
+
+
+/* ==========================================================
+   MERGE
+   ========================================================== */
+
+.flowgrid-merge-bar {
+  width: min(100%, 310px);
+
+  display: flex;
+  justify-content: center;
+
+  color: #00e5ff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+}
+
+.flowgrid-merge-bar.is-final {
+  margin-top: 2px;
+}
+
+
+/* ==========================================================
+   CERTIFICADO
+   ========================================================== */
+
+.flowgrid-certificate {
+  overflow: hidden;
+
+  width: min(100%, 350px);
+  min-height: 70px;
+
+  border: 1px solid rgba(0,229,255,.58);
+  border-radius: 999px;
+
+  background:
+    radial-gradient(
+      circle at 50% -40%,
+      rgba(255,255,255,.32),
+      transparent 45%
+    ),
+    linear-gradient(
+      120deg,
+      rgba(0,126,150,.96),
+      rgba(67,32,138,.96) 55%,
+      rgba(154,27,112,.90)
+    );
+
+  animation: flowgridCertificateGlow 2.5s ease-in-out infinite;
+}
+
+.flowgrid-certificate::before {
+  content: "";
+
+  position: absolute;
+  inset: -130% -60%;
+
+  background:
+    linear-gradient(
+      115deg,
+      transparent 43%,
+      rgba(255,255,255,.32) 50%,
+      transparent 57%
+    );
+
+  animation: flowgridCertificateShine 3s linear infinite;
+
+  pointer-events: none;
+}
+
+.flowgrid-certificate > span,
+.flowgrid-certificate > strong,
+.flowgrid-certificate > small {
+  position: relative;
+  z-index: 2;
+}
+
+.flowgrid-certificate > span {
+  color: #9bfbff;
+}
+
+.flowgrid-certificate > strong {
+  font-size: 1.05rem;
+
+  text-shadow:
+    0 0 10px rgba(0,229,255,.6),
+    0 0 20px rgba(139,92,246,.45);
+}
+
+@keyframes flowgridCertificateGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 16px rgba(0,229,255,.18);
+  }
+
+  50% {
+    box-shadow:
+      0 0 30px rgba(0,229,255,.34),
+      0 0 38px rgba(139,92,246,.22);
+  }
+}
+
+@keyframes flowgridCertificateShine {
+  from {
+    transform: translateX(-55%);
+  }
+
+  to {
+    transform: translateX(55%);
+  }
+}
+
+
+/* ==========================================================
+   COMUNIDAD
+   ========================================================== */
+
+.flowchart-community {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  min-height: 52px;
+
+  margin: 4px 0 0;
+  padding: 9px 13px;
+
+  flex: none;
+
+  border: 1px dashed rgba(0,229,255,.25);
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,229,255,.05),
+      rgba(139,92,246,.06)
+    );
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 16px;
+}
+
+.flowchart-community span {
+  display: block;
+
+  color: #00e5ff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .37rem;
+  font-weight: 900;
+}
+
+.flowchart-community strong {
+  color: #fff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .68rem;
+}
+
+.flowchart-community p {
+  margin: 0;
+
+  color: rgba(220,232,248,.7);
+
+  font-family: "Exo 2", sans-serif;
+  font-size: .58rem;
+  text-align: right;
+}
+
+
+/* ==========================================================
+   NOTEBOOK / PANEL MEDIANO
+   ========================================================== */
+
+@media (max-width: 1250px) {
+
+  .flowchart-main {
+    width: min(100%, 720px);
+  }
+
+  .flowchart-attendance-branch,
+  .flowchart-exam-branch {
+    grid-template-columns:
+      minmax(125px, .55fr)
+      minmax(300px, 1.45fr);
+
+    gap: 14px;
+  }
+
+  .flowgrid-node {
+    width: min(100%, 285px);
+  }
+
+  .flowgrid-decision {
+    width: min(100%, 275px);
+  }
+
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (max-width: 900px) {
+
+  .about-ayrpc-media-inner.is-course-flow {
+    overflow-y: auto;
+  }
+
+  .flowchart-main {
+    width: min(100%, 600px);
+  }
+
+  .flowchart-attendance-branch,
+  .flowchart-exam-branch {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .flowgrid-direct-path {
+    min-height: auto;
+  }
+
+  .flowgrid-path-line {
+    min-height: 24px;
+  }
+
+  .flowgrid-choice-pair {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width: 620px) {
+
+  .about-ayrpc-media-inner.is-course-flow {
+    padding: 10px;
+  }
+
+  .ayrpc-course-flow {
+    gap: 10px;
+  }
+
+  .ayrpc-course-flow-header strong {
+    font-size: .95rem;
+  }
+
+  .ayrpc-course-flow-header small {
+    font-size: .61rem;
+  }
+
+  .flowchart-main {
+    width: 100%;
+  }
+
+  .flowgrid-node {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .flowgrid-decision {
+    width: 100%;
+    max-width: 340px;
+    min-height: 92px;
+  }
+
+  .flowgrid-choice-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .flowgrid-path {
+    padding: 9px 6px;
+  }
+
+  .flowgrid-node > strong {
+    font-size: .72rem;
+  }
+
+  .flowgrid-decision > strong {
+    font-size: .56rem;
+  }
+
+  .flowgrid-certificate {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .flowchart-community {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .flowchart-community p {
+    text-align: left;
+  }
+
+}
+
+/* ==========================================================
+   FLOWCHART V7 · FORMAS ADAPTATIVAS + CONECTORES
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   NODOS: EL ANCHO SE ADAPTA AL CONTENIDO
+   ---------------------------------------------------------- */
+
+.flowgrid-node {
+  width: fit-content;
+  min-width: 170px;
+  max-width: min(100%, 420px);
+
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.flowgrid-node > strong,
+.flowgrid-node > small {
+  max-width: 100%;
+
+  text-wrap: balance;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+
+/* Las cards dentro de bifurcaciones tampoco ocupan todo
+   el carril porque sí */
+.flowgrid-choice .flowgrid-node {
+  width: fit-content;
+  min-width: 160px;
+  max-width: 100%;
+}
+
+
+/* ----------------------------------------------------------
+   INICIO: TE INSCRIBÍS = CÍRCULO
+   ---------------------------------------------------------- */
+
+.flowgrid-node.is-start {
+  width: 108px;
+  min-width: 108px;
+  max-width: 108px;
+
+  height: 108px;
+  min-height: 108px;
+
+  padding: 14px;
+
+  border-radius: 50%;
+
+  aspect-ratio: 1 / 1;
+}
+
+.flowgrid-node.is-start > span {
+  font-size: .34rem;
+}
+
+.flowgrid-node.is-start > strong {
+  max-width: 82px;
+  font-size: .68rem;
+  line-height: 1.08;
+}
+
+
+/* ----------------------------------------------------------
+   PROCESOS: SOLO LO QUE NECESITEN
+   ---------------------------------------------------------- */
+
+.flowgrid-node.is-approved {
+  min-width: 240px;
+}
+
+.flowgrid-node.is-recovery {
+  min-width: 220px;
+  max-width: 300px;
+}
+
+.flowgrid-node.is-hope {
+  min-width: 210px;
+  max-width: 290px;
+}
+
+.flowgrid-node.is-danger {
+  min-width: 175px;
+  max-width: 240px;
+}
+
+.flowgrid-node.is-failed {
+  min-width: 190px;
+  max-width: 270px;
+}
+
+
+/* ----------------------------------------------------------
+   ROMBOS: TAMAÑO SEGÚN EL TEXTO
+   ---------------------------------------------------------- */
+
+.flowgrid-decision {
+  width: fit-content;
+  min-width: 250px;
+  max-width: min(100%, 390px);
+
+  min-height: 96px;
+  height: auto;
+
+  padding: 22px 56px;
+}
+
+.flowgrid-decision > strong {
+  max-width: 250px;
+
+  text-wrap: balance;
+  overflow-wrap: normal;
+  word-break: normal;
+
+  line-height: 1.13;
+}
+
+
+/* La pregunta larga necesita un rombo un poco más ancho */
+.flowchart-main
+> .flowgrid-decision:not(.is-result):not(.is-recovery) {
+  min-width: 330px;
+  min-height: 106px;
+}
+
+
+/* ¿Aprueba? es cortito: rombo chico */
+.flowgrid-decision.is-result {
+  width: fit-content;
+
+  min-width: 175px;
+  max-width: 220px;
+
+  min-height: 72px;
+
+  padding: 15px 38px;
+}
+
+.flowgrid-decision.is-result > strong {
+  max-width: 130px;
+}
+
+
+/* Las preguntas de recuperación quedan intermedias */
+.flowgrid-decision.is-recovery {
+  width: fit-content;
+
+  min-width: 245px;
+  max-width: 310px;
+
+  min-height: 88px;
+
+  padding: 19px 48px;
+}
+
+.flowgrid-decision.is-recovery > strong {
+  max-width: 185px;
+}
+
+
+/* ----------------------------------------------------------
+   SÍ / NO ENTRE CONECTORES
+   ---------------------------------------------------------- */
+
+.flowgrid-chip {
+  position: relative;
+
+  margin-top: 17px;
+  margin-bottom: 2px;
+
+  z-index: 2;
+}
+
+
+/* Línea que ENTRA al SÍ / NO */
+.flowgrid-path > .flowgrid-chip::before,
+.flowgrid-choice > .flowgrid-chip::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: -18px;
+
+  width: 2px;
+  height: 15px;
+
+  transform: translateX(-50%);
+
+  background: currentColor;
+
+  opacity: .85;
+}
+
+
+/* ----------------------------------------------------------
+   FLECHAS CSS DE VERDAD
+   ---------------------------------------------------------- */
+
+/* Sacamos el símbolo ↓ y lo convertimos en línea + punta */
+.flowgrid-arrow.is-small {
+  position: relative;
+
+  width: 2px;
+  height: 27px;
+
+  margin: 2px auto 5px;
+
+  padding: 0;
+
+  background: currentColor;
+
+  font-size: 0;
+  line-height: 0;
+}
+
+
+/* Punta de flecha */
+.flowgrid-arrow.is-small::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -1px;
+
+  width: 0;
+  height: 0;
+
+  transform: translateX(-50%);
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid currentColor;
+}
+
+
+/* Flecha verde/cyan */
+.flowgrid-path .flowgrid-arrow.is-small {
+  color: #00e5ff;
+}
+
+
+/* Recuperación = amarillo */
+.flowgrid-recovery-path .flowgrid-arrow.is-small {
+  color: #ffb347;
+}
+
+
+/* Camino NO = rojo */
+.flowgrid-arrow.is-small.is-danger {
+  color: #ff5873;
+}
+
+
+/* ----------------------------------------------------------
+   CAMINO DIRECTO SÍ
+   ---------------------------------------------------------- */
+
+.flowgrid-path-line {
+  position: relative;
+
+  width: 2px;
+  min-height: 36px;
+
+  margin: 3px auto 7px;
+
+  padding: 0;
+
+  background: #00e5ff;
+
+  color: transparent;
+
+  font-size: 0;
+}
+
+
+/* Punta */
+.flowgrid-path-line::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -1px;
+
+  width: 0;
+  height: 0;
+
+  transform: translateX(-50%);
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid #00e5ff;
+}
+
+
+/* ----------------------------------------------------------
+   SÍ Y NO SON PARTE DE LA LÍNEA, NO BOTONES SUELTOS
+   ---------------------------------------------------------- */
+
+.flowgrid-chip.is-yes {
+  box-shadow:
+    0 0 12px rgba(0,229,255,.12);
+}
+
+.flowgrid-chip.is-no {
+  box-shadow:
+    0 0 12px rgba(255,61,90,.12);
+}
+
+
+/* ----------------------------------------------------------
+   MÁS AIRE DENTRO DE LAS RAMAS
+   ---------------------------------------------------------- */
+
+.flowchart-attendance-branch,
+.flowchart-exam-branch {
+  gap: 28px;
+}
+
+.flowgrid-path {
+  padding-top: 12px;
+  padding-bottom: 14px;
+}
+
+.flowgrid-choice-pair {
+  gap: 16px;
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (max-width: 900px) {
+
+  .flowgrid-node {
+    max-width: min(100%, 360px);
+  }
+
+  .flowgrid-decision,
+  .flowchart-main
+  > .flowgrid-decision:not(.is-result):not(.is-recovery) {
+    min-width: min(100%, 320px);
+    max-width: 360px;
+
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .flowgrid-decision.is-result {
+    min-width: 170px;
+    max-width: 210px;
+  }
+
+  .flowgrid-decision.is-recovery {
+    min-width: 235px;
+    max-width: 300px;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width: 620px) {
+
+  /* Los nodos siguen adaptándose, NO se agrandan al 100% */
+  .flowgrid-node {
+    width: fit-content;
+    min-width: 150px;
+    max-width: min(100%, 330px);
+
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  /* Inicio sigue siendo círculo */
+  .flowgrid-node.is-start {
+    width: 96px;
+    min-width: 96px;
+    max-width: 96px;
+
+    height: 96px;
+    min-height: 96px;
+
+    padding: 11px;
+  }
+
+  .flowgrid-node.is-start > strong {
+    max-width: 74px;
+    font-size: .62rem;
+  }
+
+
+  /* Pregunta larga */
+  .flowgrid-decision,
+  .flowchart-main
+  > .flowgrid-decision:not(.is-result):not(.is-recovery) {
+    width: fit-content;
+
+    min-width: min(100%, 290px);
+    max-width: min(100%, 330px);
+
+    min-height: 100px;
+
+    padding: 21px 44px;
+  }
+
+  .flowgrid-decision > strong {
+    max-width: 220px;
+  }
+
+
+  /* Pregunta corta */
+  .flowgrid-decision.is-result {
+    min-width: 160px;
+    max-width: 190px;
+
+    min-height: 68px;
+
+    padding: 14px 34px;
+  }
+
+
+  /* Recuperaciones */
+  .flowgrid-decision.is-recovery {
+    min-width: min(100%, 220px);
+    max-width: 280px;
+
+    min-height: 84px;
+
+    padding: 18px 42px;
+  }
+
+  .flowgrid-choice-pair {
+    gap: 12px;
+  }
+
+}
+
+/* ==========================================================
+   FLOWCHART V8 · FLECHAS DESDE LAS PUNTAS
+   ========================================================== */
+
+/* Todas las figuras pasan a ser ancla visual real */
+.flowgrid-node,
+.flowgrid-decision,
+.flowgrid-chip,
+.flowgrid-path,
+.flowgrid-choice {
+  position: relative;
+}
+
+/* Las flechas verticales arrancan pegadas a la forma anterior */
+.flowgrid-node + .flowgrid-arrow.is-small,
+.flowgrid-decision + .flowgrid-arrow.is-small,
+.flowgrid-chip + .flowgrid-arrow.is-small,
+.flowgrid-node + .flowgrid-path-line,
+.flowgrid-decision + .flowgrid-path-line,
+.flowgrid-chip + .flowgrid-path-line {
+  margin-top: -3px;
+}
+
+/* Flechas tipo línea */
+.flowgrid-arrow.is-small {
+  position: relative;
+  width: 2px;
+  height: 26px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4px;
+  background: currentColor;
+  font-size: 0;
+  line-height: 0;
+}
+
+.flowgrid-arrow.is-small::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  transform: translateX(-50%);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid currentColor;
+}
+
+.flowgrid-path-line {
+  position: relative;
+  width: 2px;
+  min-height: 34px;
+  margin: -3px auto 6px;
+  background: #00e5ff;
+  font-size: 0;
+  line-height: 0;
+}
+
+.flowgrid-path-line::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  transform: translateX(-50%);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid #00e5ff;
+}
+
+/* Los carriles de decisiones quedan más cerca del rombo */
+.flowchart-attendance-branch,
+.flowchart-exam-branch {
+  gap: 18px;
+  margin-top: -10px;
+  align-items: start;
+}
+
+/* Sacamos aire fantasma arriba de cada columna hija */
+.flowgrid-path,
+.flowgrid-choice {
+  padding-top: 0;
+}
+
+/* SÍ / NO quedan literalmente colgando de la punta */
+.flowgrid-path > .flowgrid-chip,
+.flowgrid-choice > .flowgrid-chip {
+  margin-top: -6px;
+  margin-bottom: 4px;
+}
+
+/* Línea que entra al círculo/chip desde la figura superior */
+.flowgrid-path > .flowgrid-chip::before,
+.flowgrid-choice > .flowgrid-chip::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  width: 2px;
+  height: 26px;
+  transform: translateX(-50%);
+  background: currentColor;
+  opacity: .95;
+}
+
+/* Desde el chip hacia abajo también bien armado */
+.flowgrid-path > .flowgrid-chip::after,
+.flowgrid-choice > .flowgrid-chip::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  width: 2px;
+  height: 14px;
+  transform: translateX(-50%);
+  background: currentColor;
+  opacity: .95;
+}
+
+/* Luego la flecha arranca pegada a esa bajada */
+.flowgrid-path > .flowgrid-chip + .flowgrid-arrow.is-small,
+.flowgrid-choice > .flowgrid-chip + .flowgrid-arrow.is-small,
+.flowgrid-path > .flowgrid-chip + .flowgrid-path-line,
+.flowgrid-choice > .flowgrid-chip + .flowgrid-path-line {
+  margin-top: 0;
+}
+
+/* En decisiones grandes, el texto no se corta */
+.flowgrid-decision > strong,
+.flowgrid-node > strong,
+.flowgrid-node > small {
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+/* Un poco más de aire entre card y card */
+.flowgrid-choice-pair {
+  gap: 20px;
+}
+
+/* Mobile / pantallas más chicas */
+@media (max-width: 620px) {
+  .flowchart-attendance-branch,
+  .flowchart-exam-branch {
+    gap: 14px;
+    margin-top: -6px;
+  }
+
+  .flowgrid-path > .flowgrid-chip::before,
+  .flowgrid-choice > .flowgrid-chip::before {
+    top: -26px;
+    height: 22px;
+  }
+
+  .flowgrid-path > .flowgrid-chip::after,
+  .flowgrid-choice > .flowgrid-chip::after {
+    bottom: -16px;
+    height: 12px;
+  }
+
+  .flowgrid-arrow.is-small {
+    height: 22px;
+  }
+
+  .flowgrid-path-line {
+    min-height: 28px;
+  }
+}
+
+/* ==========================================================
+   FLOWCHART V9 · CONECTORES EN T REALES
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   BIFURCACIONES
+   El rombo desemboca en UN tronco que luego se divide.
+   ---------------------------------------------------------- */
+
+.flowchart-attendance-branch,
+.flowchart-exam-branch,
+.flowgrid-choice-pair {
+  position: relative;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  padding-top: 42px;
+  margin-top: 0;
+
+  gap: 20px;
+}
+
+
+/* Tronco vertical: sale de la punta inferior del rombo */
+.flowchart-attendance-branch::after,
+.flowchart-exam-branch::after,
+.flowgrid-choice-pair::after {
+  content: "";
+
+  position: absolute;
+
+  top: -8px;
+  left: 50%;
+
+  width: 2px;
+  height: 29px;
+
+  transform: translateX(-50%);
+
+  background: #00e5ff;
+
+  box-shadow: 0 0 8px rgba(0,229,255,.32);
+}
+
+
+/* Barra horizontal de bifurcación */
+.flowchart-attendance-branch::before,
+.flowchart-exam-branch::before,
+.flowgrid-choice-pair::before {
+  content: "";
+
+  position: absolute;
+
+  top: 20px;
+  left: 25%;
+  right: 25%;
+
+  height: 2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00e5ff 0%,
+      #00e5ff 46%,
+      #8b5cf6 50%,
+      #ff5873 54%,
+      #ff5873 100%
+    );
+
+  box-shadow: 0 0 7px rgba(0,229,255,.18);
+}
+
+
+/* ----------------------------------------------------------
+   BAJADAS DESDE LA T A CADA RAMA
+   ---------------------------------------------------------- */
+
+.flowgrid-path,
+.flowgrid-choice {
+  position: relative;
+}
+
+
+/* SÍ */
+.flowgrid-direct-path::before,
+.flowgrid-choice:first-child::before {
+  content: "";
+
+  position: absolute;
+
+  top: -22px;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  transform: translateX(-50%);
+
+  background: #00e5ff;
+}
+
+
+/* NO */
+.flowgrid-recovery-path::before,
+.flowgrid-choice:last-child::before {
+  content: "";
+
+  position: absolute;
+
+  top: -22px;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  transform: translateX(-50%);
+
+  background: #ff5873;
+}
+
+
+/* ----------------------------------------------------------
+   MATAMOS LOS CONECTORES VIEJOS DE LOS CHIPS
+   ---------------------------------------------------------- */
+
+.flowgrid-path > .flowgrid-chip::before,
+.flowgrid-path > .flowgrid-chip::after,
+.flowgrid-choice > .flowgrid-chip::before,
+.flowgrid-choice > .flowgrid-chip::after {
+  content: none !important;
+  display: none !important;
+}
+
+
+/* Los SÍ / NO quedan justo donde termina cada bajada */
+.flowgrid-path > .flowgrid-chip,
+.flowgrid-choice > .flowgrid-chip {
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+
+/* ----------------------------------------------------------
+   DESDE SÍ / NO HACIA LA SIGUIENTE FIGURA
+   ---------------------------------------------------------- */
+
+.flowgrid-chip + .flowgrid-arrow.is-small {
+  margin-top: 0;
+}
+
+
+/* Línea */
+.flowgrid-arrow.is-small {
+  width: 2px;
+  height: 28px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+
+  background: currentColor;
+
+  font-size: 0;
+  line-height: 0;
+}
+
+
+/* Punta */
+.flowgrid-arrow.is-small::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -1px;
+
+  transform: translateX(-50%);
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid currentColor;
+}
+
+
+/* SÍ */
+.flowgrid-choice:first-child .flowgrid-arrow.is-small {
+  color: #00e5ff;
+}
+
+
+/* NO */
+.flowgrid-choice:last-child .flowgrid-arrow.is-small {
+  color: #ff5873;
+}
+
+
+/* ----------------------------------------------------------
+   CAMINO DIRECTO SÍ
+   ---------------------------------------------------------- */
+
+.flowgrid-direct-path .flowgrid-path-line {
+  width: 2px;
+  min-height: 38px;
+
+  margin: 0 auto 7px;
+
+  background: #00e5ff;
+}
+
+
+/* ----------------------------------------------------------
+   ROMBOS PEGADOS AL CONECTOR
+   ---------------------------------------------------------- */
+
+.flowgrid-decision + .flowchart-attendance-branch,
+.flowgrid-decision + .flowchart-exam-branch,
+.flowgrid-decision + .flowgrid-choice-pair {
+  margin-top: 0;
+}
+
+
+/* ----------------------------------------------------------
+   LAS FIGURAS YA NO RECIBEN ESPACIO FANTASMA
+   ---------------------------------------------------------- */
+
+.flowgrid-path,
+.flowgrid-choice {
+  padding-top: 0;
+}
+
+
+/* ==========================================================
+   PANTALLA MEDIANA
+   Seguimos usando dos ramas. No hacemos zoom.
+   ========================================================== */
+
+@media (max-width: 900px) {
+
+  .flowchart-attendance-branch,
+  .flowchart-exam-branch,
+  .flowgrid-choice-pair {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+    padding-top: 40px;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE MUY ANGOSTO
+   Reflow vertical, sin solapamientos.
+   ========================================================== */
+
+@media (max-width: 430px) {
+
+  .flowchart-attendance-branch,
+  .flowchart-exam-branch,
+  .flowgrid-choice-pair {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+    padding-top: 25px;
+  }
+
+  /* En columna no usamos la barra horizontal */
+  .flowchart-attendance-branch::before,
+  .flowchart-exam-branch::before,
+  .flowgrid-choice-pair::before {
+    display: none;
+  }
+
+  /* Tronco único desde el rombo */
+  .flowchart-attendance-branch::after,
+  .flowchart-exam-branch::after,
+  .flowgrid-choice-pair::after {
+    top: -8px;
+    height: 26px;
+  }
+
+  /* Cada alternativa queda como rama independiente */
+  .flowgrid-direct-path::before,
+  .flowgrid-recovery-path::before,
+  .flowgrid-choice:first-child::before,
+  .flowgrid-choice:last-child::before {
+    display: none;
+  }
+
+}
+
+/* ==========================================================
+   FLOWCHART V10 · MERGES REALES A APTO Y CERTIFICADO
+   ========================================================== */
+
+/* Los merges juntan dos caminos exitosos en un solo tronco central */
+.flowchart-merge {
+  position: relative;
+  width: 100%;
+  height: 34px;
+  margin: 4px auto 8px;
+  pointer-events: none;
+}
+
+.flowchart-merge-attendance {
+  max-width: 720px;
+}
+
+.flowchart-merge-exam {
+  max-width: 720px;
+}
+
+.flowchart-merge-input,
+.flowchart-merge-bar,
+.flowchart-merge-output {
+  position: absolute;
+  display: block;
+}
+
+.flowchart-merge-input {
+  top: 0;
+  width: 2px;
+  height: 12px;
+  background: #00e5ff;
+  box-shadow: 0 0 8px rgba(0,229,255,.28);
+}
+
+.flowchart-merge-input.is-left {
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+.flowchart-merge-input.is-right {
+  left: 75%;
+  transform: translateX(-50%);
+}
+
+.flowchart-merge-bar {
+  top: 12px;
+  left: 25%;
+  width: 50%;
+  height: 2px;
+  transform: translateX(0);
+  background: #00e5ff;
+  box-shadow: 0 0 8px rgba(0,229,255,.22);
+}
+
+.flowchart-merge-output {
+  top: 12px;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  transform: translateX(-50%);
+  background: #00e5ff;
+  box-shadow: 0 0 8px rgba(0,229,255,.28);
+}
+
+/* Un poquito más de aire antes de los nodos destino */
+.flow-exam-ready,
+.flow-certificate {
+  margin-top: 2px;
+}
+
+/* En mobile no escalamos: solo simplificamos el merge */
+@media (max-width: 640px) {
+  .flowchart-merge {
+    height: 24px;
+    margin: 2px auto 8px;
+  }
+
+  .flowchart-merge-input,
+  .flowchart-merge-bar {
+    display: none;
+  }
+
+  .flowchart-merge-output {
+    top: 0;
+    height: 24px;
+  }
+}
+
+/* ==========================================================
+   FLOWCHART V11 · SUCCESS MERGES
+   SÍ + recuperación confluyen en el mismo objetivo
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   EL CAMINO DIRECTO SE CONVIERTE EN CABLE
+   ---------------------------------------------------------- */
+
+.flowgrid-direct-path {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+}
+
+.flowgrid-success-stem {
+  position: relative;
+
+  width: 2px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background: #00e5ff;
+
+  box-shadow: 0 0 8px rgba(0,229,255,.28);
+}
+
+
+/* SÍ directo ocupa el alto restante de su carril */
+.flowgrid-success-stem.is-direct {
+  flex: 1;
+
+  min-height: 80px;
+
+  margin-top: 4px;
+  margin-bottom: -14px;
+}
+
+
+/* Después de recuperar, bajamos al mismo nivel */
+.flowgrid-success-stem.is-recovered {
+  height: 34px;
+
+  margin-top: 6px;
+  margin-bottom: -14px;
+}
+
+
+/* ----------------------------------------------------------
+   MERGE
+   Dos entradas -> una salida central
+   ---------------------------------------------------------- */
+
+.flowgrid-success-merge {
+  position: relative;
+
+  width: 100%;
+  height: 46px;
+
+  margin-top: -6px;
+  margin-bottom: 0;
+
+  flex: none;
+
+  pointer-events: none;
+}
+
+
+/* Barra horizontal: desde el SÍ directo hasta el
+   camino exitoso de recuperación */
+.flowgrid-success-merge .merge-horizontal {
+  position: absolute;
+
+  top: 5px;
+
+  left: 16%;
+  width: 34%;
+
+  height: 2px;
+
+  background: #00e5ff;
+
+  box-shadow: 0 0 8px rgba(0,229,255,.25);
+}
+
+
+/* Salida central hacia el objetivo */
+.flowgrid-success-merge .merge-output {
+  position: absolute;
+
+  top: 5px;
+  left: 50%;
+
+  width: 2px;
+  height: 34px;
+
+  transform: translateX(-50%);
+
+  background: #00e5ff;
+
+  box-shadow: 0 0 8px rgba(0,229,255,.3);
+}
+
+
+/* Punta de flecha */
+.flowgrid-success-merge .merge-arrow {
+  position: absolute;
+
+  left: 50%;
+  bottom: 1px;
+
+  width: 0;
+  height: 0;
+
+  transform: translateX(-50%);
+
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #00e5ff;
+
+  filter: drop-shadow(
+    0 0 4px rgba(0,229,255,.4)
+  );
+}
+
+
+/* ----------------------------------------------------------
+   APTO Y CERTIFICADO PEGADOS A SU FLECHA
+   ---------------------------------------------------------- */
+
+.flowgrid-success-merge + .flowgrid-node {
+  margin-top: -2px;
+}
+
+
+/* ----------------------------------------------------------
+   ELIMINAMOS ELEMENTOS VIEJOS QUE PUEDAN SOBREVIVIR
+   ---------------------------------------------------------- */
+
+.flowgrid-merge-label {
+  display: none !important;
+}
+
+.flowgrid-merge-bar {
+  display: none !important;
+}
+
+
+/* ==========================================================
+   NOTEBOOK
+   Las columnas cambian un poco de proporción,
+   así que adaptamos el punto del SÍ directo.
+   ========================================================== */
+
+@media (max-width: 1250px) {
+
+  .flowgrid-success-merge .merge-horizontal {
+    left: 14%;
+    width: 36%;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE / TABLET ANGOSTO
+   No comprimimos ni hacemos zoom.
+   Los éxitos se muestran como dos entradas verticales
+   al mismo destino.
+   ========================================================== */
+
+@media (max-width: 900px) {
+
+  .flowgrid-success-stem.is-direct {
+    min-height: 42px;
+  }
+
+  .flowgrid-success-stem.is-recovered {
+    height: 28px;
+  }
+
+}
+
+
+@media (max-width: 430px) {
+
+  /*
+     En una sola columna ya no tiene sentido una barra
+     horizontal. Los dos caminos aparecen secuenciales
+     y terminan en una única flecha central.
+  */
+
+  .flowgrid-success-merge {
+    height: 38px;
+    margin-top: 0;
+  }
+
+  .flowgrid-success-merge .merge-horizontal {
+    display: none;
+  }
+
+  .flowgrid-success-merge .merge-output {
+    top: 0;
+    height: 30px;
+  }
+
+  .flowgrid-success-merge .merge-arrow {
+    bottom: 0;
+  }
+
+}
+
+/* ==========================================================
+   FLOWCHART V12 · SÍ DIRECTO A APTO
+   ========================================================== */
+
+/* APTO vive literalmente debajo del SÍ */
+.flowgrid-direct-path {
+  justify-content: flex-start;
+}
+
+.flowgrid-direct-path .flowgrid-node.is-approved {
+  width: min(100%, 240px);
+  min-width: 0;
+  margin-top: 0;
+}
+
+
+/* SÍ -> flecha -> APTO */
+.flowgrid-direct-path
+> .flowgrid-chip
++ .flowgrid-arrow.is-small {
+  height: 30px;
+  margin-top: 0;
+  margin-bottom: 5px;
+
+  color: #00e5ff;
+}
+
+
+/* ==========================================================
+   RECUPERACIÓN -> FLECHA HORIZONTAL HACIA APTO
+   ========================================================== */
+
+.flowgrid-choice:first-child {
+  position: relative;
+}
+
+.flowgrid-recovery-to-apto {
+  position: relative;
+
+  width: 100%;
+  height: 24px;
+
+  margin-top: 5px;
+}
+
+
+/* Línea que sale desde Recuperás pendientes hacia la izquierda */
+.flowgrid-recovery-to-apto::before {
+  content: "";
+
+  position: absolute;
+
+  top: 10px;
+  right: 50%;
+
+  width: calc(100% + 30px);
+  height: 2px;
+
+  background: #00e5ff;
+
+  box-shadow:
+    0 0 8px rgba(0,229,255,.32);
+}
+
+
+/* Punta de flecha en el extremo izquierdo */
+.flowgrid-recovery-to-apto::after {
+  content: "";
+
+  position: absolute;
+
+  top: 6px;
+  left: calc(-50% - 30px);
+
+  width: 0;
+  height: 0;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 8px solid #00e5ff;
+
+  filter:
+    drop-shadow(0 0 4px rgba(0,229,255,.4));
+}
+
+
+/* Ya no necesitamos el viejo merge de asistencia */
+.flowgrid-success-merge.is-attendance {
+  display: none !important;
+}
+
+
+/* ==========================================================
+   MOBILE
+   En una sola columna la vuelta se indica sin invadir cards
+   ========================================================== */
+
+@media (max-width: 430px) {
+
+  .flowgrid-recovery-to-apto {
+    height: 22px;
+    margin-top: 7px;
+  }
+
+  .flowgrid-recovery-to-apto::before {
+    display: none;
+  }
+
+  .flowgrid-recovery-to-apto::after {
+    content: "↖ APTO";
+
+    position: static;
+
+    display: block;
+
+    border: 0;
+
+    color: #00e5ff;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: .48rem;
+    font-weight: 900;
+
+    text-align: center;
+
+    filter: none;
+  }
+}
+
+/* ==========================================================
+   FLOWCHART V13 · RAMA ASISTENCIA HORIZONTAL
+   Apto NO SE MUEVE
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   SOLO la rama derecha de ASISTENCIA
+   ---------------------------------------------------------- */
+
+.flowchart-attendance-branch .flowgrid-recovery-path {
+  display: grid !important;
+
+  grid-template-columns:
+    48px
+    34px
+    minmax(200px, 1fr)
+    18px
+    48px
+    34px
+    minmax(145px, .8fr);
+
+  grid-template-rows: auto auto;
+
+  column-gap: 6px;
+  row-gap: 12px;
+
+  align-items: center;
+
+  padding: 0 6px 10px !important;
+  margin: 0 !important;
+}
+
+
+/* ==========================================================
+   PRIMER NO -> ¿RECUPERÁS?
+   ========================================================== */
+
+.flowchart-attendance-branch
+.flowgrid-recovery-path
+> .flowgrid-chip.is-no {
+  grid-column: 1;
+  grid-row: 1;
+
+  margin: 0 !important;
+
+  align-self: center;
+  justify-self: center;
+}
+
+
+/* La flecha que era vertical ahora apunta a la derecha */
+.flowchart-attendance-branch
+.flowgrid-recovery-path
+> .flowgrid-arrow.is-small {
+  grid-column: 2;
+  grid-row: 1;
+
+  width: 2px !important;
+  height: 28px !important;
+
+  margin: 0 !important;
+
+  transform: rotate(-90deg);
+
+  justify-self: center;
+
+  color: #ff5873;
+}
+
+
+/* Rombo de recuperación */
+.flowchart-attendance-branch
+.flowgrid-recovery-path
+> .flowgrid-decision.is-recovery {
+  grid-column: 3;
+  grid-row: 1;
+
+  margin: 0 !important;
+
+  justify-self: stretch;
+
+  min-width: 200px;
+  max-width: 280px;
+}
+
+
+/* ==========================================================
+   DESARMAR EL GRID INTERNO VIEJO
+   ========================================================== */
+
+.flowchart-attendance-branch
+.flowgrid-recovery-path
+> .flowgrid-choice-pair {
+  display: contents !important;
+}
+
+.flowchart-attendance-branch
+.flowgrid-choice-pair::before,
+.flowchart-attendance-branch
+.flowgrid-choice-pair::after {
+  display: none !important;
+}
+
+.flowchart-attendance-branch
+.flowgrid-choice::before,
+.flowchart-attendance-branch
+.flowgrid-choice::after {
+  display: none !important;
+}
+
+
+/* ==========================================================
+   SÍ DE RECUPERACIÓN
+   Baja debajo del rombo
+   ========================================================== */
+
+.flowchart-attendance-branch
+.flowgrid-recovery-path
+.flowgrid-choice:first-child {
+  grid-column: 3;
+  grid-row: 2;
+
+  position: relative;
+
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+
+  min-width: 0;
+
+  margin: 0 !important;
+  padding: 12px 0 0 !important;
+}
+
+
+/* Línea que baja desde el rombo al SÍ */
+.flowchart-attendance-branch
+.flowgrid-recovery-path
+.flowgrid-choice:first-child::before {
+  content: "";
+
+  display: block !important;
+
+  position: absolute;
+
+  top: -12px;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  transform: translateX(-50%);
+
+  background: #00e5ff;
+
+  box-shadow:
+    0 0 7px rgba(0,229,255,.28);
+}
+
+
+/* El SÍ */
+.flowchart-attendance-branch
+.flowgrid-recovery-path
+.flowgrid-choice:first-child
+> .flowgrid-chip {
+  margin: 0 0 5px !important;
+}
+
+
+/* Flecha SÍ -> Recuperás */
+.flowchart-attendance-branch
+.flowgrid-recovery-path
+.flowgrid-choice:first-child
+> .flowgrid-arrow.is-small {
+  transform: none !important;
+
+  width: 2px !important;
+  height: 24px !important;
+
+  margin: 0 auto 5px !important;
+
+  color: #00e5ff;
+}
+
+
+/* Card Recuperás pendientes */
+.flowchart-attendance-branch
+.flowgrid-recovery-path
+.flowgrid-choice:first-child
+> .flowgrid-node {
+  width: fit-content;
+  min-width: 185px;
+  max-width: 240px;
+}
+
+
+/* ==========================================================
+   RECUPERÁS -> APTO
+   UNA SOLA FLECHA HACIA LA IZQUIERDA
+   ========================================================== */
+
+.flowchart-attendance-branch
+.flowgrid-recovery-to-apto {
+  position: relative !important;
+
+  display: block !important;
+
+  width: clamp(130px, 11vw, 190px) !important;
+  height: 2px !important;
+
+  margin-top: 12px !important;
+  margin-left: -110px !important;
+
+  background: #00e5ff !important;
+
+  box-shadow:
+    0 0 8px rgba(0,229,255,.3);
+
+  transform: none !important;
+}
+
+
+/* punta apuntando hacia APTO */
+.flowchart-attendance-branch
+.flowgrid-recovery-to-apto::after {
+  content: "";
+
+  position: absolute;
+
+  left: -1px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 0;
+  height: 0;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 8px solid #00e5ff;
+
+  filter:
+    drop-shadow(0 0 4px rgba(0,229,255,.35));
+}
+
+
+/* No queremos ningún pseudo-conector viejo */
+.flowchart-attendance-branch
+.flowgrid-recovery-to-apto::before {
+  display: none !important;
+}
+
+
+/* ==========================================================
+   NO DE RECUPERACIÓN -> NO APTO
+   TODO HORIZONTAL
+   ========================================================== */
+
+.flowchart-attendance-branch
+.flowgrid-recovery-path
+.flowgrid-choice:last-child {
+  grid-column: 4 / 8;
+  grid-row: 1;
+
+  display: grid !important;
+
+  grid-template-columns:
+    48px
+    34px
+    minmax(145px, 1fr);
+
+  gap: 6px;
+
+  align-items: center;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+/* segundo NO */
+.flowchart-attendance-branch
+.flowgrid-recovery-path
+.flowgrid-choice:last-child
+> .flowgrid-chip {
+  grid-column: 1;
+
+  margin: 0 !important;
+
+  justify-self: center;
+}
+
+
+/* flecha horizontal -> */
+.flowchart-attendance-branch
+.flowgrid-recovery-path
+.flowgrid-choice:last-child
+> .flowgrid-arrow.is-small {
+  grid-column: 2;
+
+  width: 2px !important;
+  height: 28px !important;
+
+  margin: 0 !important;
+
+  transform: rotate(-90deg);
+
+  color: #ff5873;
+
+  justify-self: center;
+}
+
+
+/* No apto */
+.flowchart-attendance-branch
+.flowgrid-recovery-path
+.flowgrid-choice:last-child
+> .flowgrid-node {
+  grid-column: 3;
+
+  width: 100%;
+  min-width: 135px;
+  max-width: 175px;
+
+  margin: 0 !important;
+}
+
+
+/* ==========================================================
+   MATAR RESTOS DE CONECTORES ANTERIORES
+   SOLO EN ESTA RAMA
+   ========================================================== */
+
+.flowchart-attendance-branch
+.flowgrid-recovery-path
+.flowgrid-chip::before,
+.flowchart-attendance-branch
+.flowgrid-recovery-path
+.flowgrid-chip::after {
+  display: none !important;
+}
+
+
+/* ==========================================================
+   NOTEBOOK
+   Sigue horizontal mientras haya espacio
+   ========================================================== */
+
+@media (max-width: 1100px) {
+
+  .flowchart-attendance-branch
+  .flowgrid-recovery-path {
+    grid-template-columns:
+      42px
+      28px
+      minmax(180px, 1fr)
+      12px
+      42px
+      28px
+      minmax(125px, .75fr);
+
+    column-gap: 4px;
+  }
+
+  .flowchart-attendance-branch
+  .flowgrid-recovery-to-apto {
+    width: 120px !important;
+    margin-left: -75px !important;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   Acá sí refluye porque físicamente no entra horizontal.
+   No se achican las cards.
+   ========================================================== */
+
+@media (max-width: 620px) {
+
+  .flowchart-attendance-branch
+  .flowgrid-recovery-path {
+    display: flex !important;
+    flex-direction: column;
+
+    gap: 9px;
+
+    align-items: center;
+
+    padding: 8px !important;
+  }
+
+  .flowchart-attendance-branch
+  .flowgrid-recovery-path
+  > .flowgrid-arrow.is-small {
+    transform: none;
+  }
+
+  .flowchart-attendance-branch
+  .flowgrid-recovery-path
+  .flowgrid-choice:last-child {
+    display: flex !important;
+    flex-direction: column;
+
+    gap: 6px;
+  }
+
+  .flowchart-attendance-branch
+  .flowgrid-recovery-path
+  .flowgrid-choice:last-child
+  > .flowgrid-arrow.is-small {
+    transform: none;
+  }
+
+  .flowchart-attendance-branch
+  .flowgrid-recovery-to-apto {
+    width: 90px !important;
+
+    margin: 8px auto 0 !important;
+  }
+
+}
+
+/* ==========================================================
+   FLOWCHART V14
+   ASISTENCIA · GEOMETRÍA DEFINITIVA
+   ========================================================== */
+
+.attendance-flow {
+  position: relative !important;
+
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(105px, .95fr)
+    minmax(22px, .28fr)
+    30px
+    18px
+    minmax(110px, 1fr)
+    30px
+    18px
+    minmax(95px, .85fr) !important;
+
+  grid-template-rows:
+    auto
+    auto !important;
+
+  column-gap: 4px !important;
+  row-gap: 16px !important;
+
+  align-items: center !important;
+
+  width: 100% !important;
+
+  padding: 38px 0 8px !important;
+  margin: 0 !important;
+
+  border: 0 !important;
+}
+
+
+/* matar conectores viejos */
+.attendance-flow::before,
+.attendance-flow::after,
+.attendance-flow .flowgrid-direct-path::before,
+.attendance-flow .flowgrid-direct-path::after,
+.attendance-flow .flowgrid-chip::before,
+.attendance-flow .flowgrid-chip::after {
+  display: none !important;
+}
+
+
+/* ==========================================================
+   SÍ PRINCIPAL
+   ========================================================== */
+
+.attendance-flow-yes {
+  display: contents !important;
+}
+
+.attendance-flow-yes > .flowgrid-chip {
+  grid-column: 1;
+  grid-row: 1;
+
+  justify-self: center;
+
+  margin: 0 !important;
+}
+
+
+/* APTO está directamente debajo */
+.attendance-flow-apto {
+  grid-column: 1;
+  grid-row: 2;
+
+  position: relative !important;
+
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 150px !important;
+
+  justify-self: center;
+
+  margin: 0 !important;
+}
+
+
+/* línea vertical SÍ -> APTO */
+.attendance-flow-apto::before {
+  content: "";
+
+  display: block !important;
+
+  position: absolute;
+
+  left: 50%;
+  top: -30px;
+
+  width: 2px;
+  height: 22px;
+
+  transform: translateX(-50%);
+
+  background: #00e5ff;
+
+  box-shadow:
+    0 0 8px rgba(0,229,255,.3);
+}
+
+
+/* punta hacia APTO */
+.attendance-flow-apto::after {
+  content: "";
+
+  display: block !important;
+
+  position: absolute;
+
+  left: 50%;
+  top: -9px;
+
+  transform: translateX(-50%);
+
+  width: 0;
+  height: 0;
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid #00e5ff;
+}
+
+
+/* ==========================================================
+   NO PRINCIPAL
+   ========================================================== */
+
+.attendance-flow-no-start {
+  grid-column: 3;
+  grid-row: 1;
+
+  justify-self: center;
+}
+
+
+/* NO -> ¿RECUPERÁS? */
+.attendance-flow-arrow-right {
+  grid-column: 4;
+  grid-row: 1;
+
+  color: #ff5675;
+
+  font-size: 1rem;
+  font-weight: 900;
+
+  text-align: center;
+}
+
+
+/* ==========================================================
+   ¿RECUPERÁS?
+   ========================================================== */
+
+.attendance-flow-recovery {
+  grid-column: 5;
+  grid-row: 1;
+
+  width: 100% !important;
+
+  min-width: 105px !important;
+  max-width: 150px !important;
+
+  justify-self: center;
+
+  margin: 0 !important;
+}
+
+
+/* Texto sólo para mantener compatibilidad con test anterior */
+.attendance-flow-sr-only {
+  position: absolute !important;
+
+  width: 1px !important;
+  height: 1px !important;
+
+  padding: 0 !important;
+  margin: -1px !important;
+
+  overflow: hidden !important;
+
+  clip: rect(0, 0, 0, 0) !important;
+
+  white-space: nowrap !important;
+
+  border: 0 !important;
+}
+
+
+/* ==========================================================
+   NO RECUPERA -> NO APTO
+   TODO SIGUE HACIA LA DERECHA
+   ========================================================== */
+
+.attendance-flow-no-after {
+  grid-column: 6;
+  grid-row: 1;
+
+  justify-self: center;
+}
+
+.attendance-flow-arrow-no-apto {
+  grid-column: 7;
+  grid-row: 1;
+}
+
+.attendance-flow-no-apto {
+  grid-column: 8;
+  grid-row: 1;
+
+  width: 100% !important;
+
+  min-width: 0 !important;
+  max-width: 125px !important;
+
+  justify-self: center;
+
+  margin: 0 !important;
+}
+
+
+/* ==========================================================
+   SÍ RECUPERA
+   MISMA ALTURA QUE APTO
+   ========================================================== */
+
+.attendance-flow-return {
+  grid-column: 2 / 6;
+  grid-row: 2;
+
+  display: grid !important;
+
+  grid-template-columns:
+    1fr
+    auto !important;
+
+  align-items: center;
+
+  gap: 5px;
+
+  width: 100%;
+}
+
+
+/* flecha horizontal que vuelve a APTO */
+.attendance-flow-return .flowgrid-recovery-to-apto {
+  position: relative !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  height: 2px !important;
+
+  margin: 0 !important;
+
+  background: #00e5ff !important;
+
+  box-shadow:
+    0 0 8px rgba(0,229,255,.3);
+
+  font-size: 0 !important;
+}
+
+
+/* punta hacia la izquierda */
+.attendance-flow-return
+.flowgrid-recovery-to-apto::before {
+  content: "";
+
+  display: block !important;
+
+  position: absolute;
+
+  left: -1px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 0;
+  height: 0;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 8px solid #00e5ff;
+}
+
+
+.attendance-flow-return
+.flowgrid-recovery-to-apto::after {
+  display: none !important;
+}
+
+
+/* SÍ exactamente debajo de ¿RECUPERÁS? */
+.attendance-flow-return > .flowgrid-chip {
+  margin: 0 !important;
+
+  justify-self: center;
+}
+
+
+/* ==========================================================
+   CONECTOR SUPERIOR DESDE EL ROMBO DE ASISTENCIA
+   ========================================================== */
+
+.attendance-flow {
+  --attendance-split-y: 19px;
+}
+
+.attendance-flow > .attendance-flow-no-start::before {
+  content: "";
+
+  display: block !important;
+
+  position: absolute;
+
+  top: 18px;
+  left: 13%;
+  right: 63%;
+
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    #00e5ff 0 48%,
+    #ff5675 52% 100%
+  );
+}
+
+
+/* ==========================================================
+   MOBILE
+   Refluye sólo cuando realmente no entra
+   ========================================================== */
+
+@media (max-width: 620px) {
+
+  .attendance-flow {
+    display: flex !important;
+    flex-direction: column !important;
+
+    gap: 12px !important;
+
+    padding-top: 12px !important;
+  }
+
+  .attendance-flow-yes {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 8px;
+  }
+
+  .attendance-flow-apto::before,
+  .attendance-flow-apto::after,
+  .attendance-flow > .attendance-flow-no-start::before {
+    display: none !important;
+  }
+
+  .attendance-flow-return {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+
+    width: min(100%, 260px);
+
+    align-self: center;
+  }
+
+}
+
+/* ==========================================================
+   COURSE FLOW V15
+   Árbol horizontal limpio.
+   La rama problemática crece hacia la derecha.
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   RESET DE LOS PARCHES ANTERIORES DENTRO DE V2
+   ---------------------------------------------------------- */
+
+.course-flow-v2 .flow-v2-branch::before,
+.course-flow-v2 .flow-v2-branch::after,
+.course-flow-v2 .flowgrid-direct-path::before,
+.course-flow-v2 .flowgrid-direct-path::after,
+.course-flow-v2 .flow-v2-return::before,
+.course-flow-v2 .flow-v2-return::after,
+.course-flow-v2 .flowgrid-chip::before,
+.course-flow-v2 .flowgrid-chip::after {
+  display: none !important;
+  content: none !important;
+}
+
+
+.course-flow-v2 .flow-v2-branch {
+  position: relative !important;
+
+  width: 100% !important;
+  max-width: none !important;
+
+  margin: 4px 0 0 !important;
+  padding: 18px 0 8px !important;
+
+  border: 0 !important;
+  background: transparent !important;
+
+  overflow: visible !important;
+}
+
+
+/* ==========================================================
+   ASISTENCIA
+   ========================================================== */
+
+.course-flow-v2 .flow-v2-attendance {
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(105px, .95fr)
+    48px
+    minmax(105px, 1fr)
+    minmax(125px, 1.15fr) !important;
+
+  grid-template-rows:
+    auto
+    auto !important;
+
+  column-gap: 8px !important;
+  row-gap: 13px !important;
+
+  align-items: center !important;
+}
+
+
+/* ----------------------------------------------------------
+   SÍ PRINCIPAL -> APTO
+   ---------------------------------------------------------- */
+
+.course-flow-v2 .attendance-primary-yes {
+  grid-column: 1 !important;
+  grid-row: 1 / 3 !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  align-items: center !important;
+  justify-content: flex-start !important;
+
+  align-self: start !important;
+
+  min-width: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+.course-flow-v2 .attendance-primary-yes .flow-v2-down,
+.course-flow-v2 .exam-primary-yes .flow-v2-down {
+  display: block;
+
+  height: 24px;
+
+  margin: 3px 0 4px;
+
+  color: #00e5ff;
+
+  font-size: .75rem;
+  line-height: 24px;
+  text-align: center;
+}
+
+
+.course-flow-v2 .attendance-primary-yes .is-approved {
+  width: 100% !important;
+
+  min-width: 0 !important;
+  max-width: 145px !important;
+
+  margin: 0 !important;
+}
+
+
+/* ----------------------------------------------------------
+   NO PRINCIPAL
+   ---------------------------------------------------------- */
+
+.course-flow-v2 .attendance-primary-no,
+.course-flow-v2 .exam-primary-no {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  gap: 5px !important;
+
+  margin: 0 !important;
+}
+
+
+.course-flow-v2 .attendance-primary-no {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+}
+
+
+/* ----------------------------------------------------------
+   ¿RECUPERÁS?
+   ---------------------------------------------------------- */
+
+.course-flow-v2 .attendance-recovery-decision {
+  grid-column: 3 !important;
+  grid-row: 1 !important;
+
+  width: 100% !important;
+
+  min-width: 100px !important;
+  max-width: 145px !important;
+
+  margin: 0 !important;
+}
+
+
+/* ----------------------------------------------------------
+   NO -> NO APTO
+   ---------------------------------------------------------- */
+
+.course-flow-v2 .attendance-recovery-no {
+  grid-column: 4 !important;
+  grid-row: 1 !important;
+}
+
+
+/* ==========================================================
+   GRUPO NO + FLECHA + RESULTADO NEGATIVO
+   ========================================================== */
+
+.course-flow-v2 .flow-v2-no-exit {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: flex-start !important;
+
+  gap: 4px !important;
+
+  min-width: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+.course-flow-v2 .flow-v2-no-exit .flowgrid-node {
+  flex: 1 1 auto !important;
+
+  width: auto !important;
+  min-width: 82px !important;
+  max-width: 120px !important;
+
+  margin: 0 !important;
+}
+
+
+/* ==========================================================
+   FLECHITAS HORIZONTALES
+   ========================================================== */
+
+.course-flow-v2 .flow-v2-right {
+  flex: 0 0 auto;
+
+  color: #00e5ff;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: .78rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+
+.course-flow-v2 .flow-v2-right.is-danger {
+  color: #ff5274;
+}
+
+
+/* ==========================================================
+   SÍ DE RECUPERACIÓN
+   Queda A LA MISMA ALTURA que APTO / CERTIFICADO
+   ========================================================== */
+
+.course-flow-v2 .flow-v2-return {
+  display: flex !important;
+
+  align-items: center !important;
+
+  gap: 5px !important;
+
+  width: 100% !important;
+
+  min-width: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+.course-flow-v2 .attendance-recovery-yes {
+  grid-column: 2 / 4 !important;
+  grid-row: 2 !important;
+}
+
+
+.course-flow-v2 .flow-v2-return-line,
+.course-flow-v2 .flowgrid-recovery-to-apto.flow-v2-return-line {
+  position: relative !important;
+
+  display: block !important;
+
+  flex: 1 1 auto !important;
+
+  width: auto !important;
+  height: 2px !important;
+
+  margin: 0 !important;
+
+  background: #00e5ff !important;
+
+  box-shadow:
+    0 0 7px rgba(0,229,255,.32) !important;
+
+  transform: none !important;
+}
+
+
+/* punta a la izquierda */
+.course-flow-v2 .flow-v2-return-line::before,
+.course-flow-v2 .flowgrid-recovery-to-apto.flow-v2-return-line::before {
+  content: "" !important;
+
+  display: block !important;
+
+  position: absolute !important;
+
+  left: -1px !important;
+  top: 50% !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  transform: translateY(-50%) !important;
+
+  border-top: 5px solid transparent !important;
+  border-bottom: 5px solid transparent !important;
+  border-right: 8px solid #00e5ff !important;
+
+  background: transparent !important;
+}
+
+
+.course-flow-v2 .flow-v2-return-line::after,
+.course-flow-v2 .flowgrid-recovery-to-apto.flow-v2-return-line::after {
+  display: none !important;
+  content: none !important;
+}
+
+
+/* ==========================================================
+   CAMINO FELIZ
+   EXAMEN CONTINÚA DEBAJO DE APTO
+   ========================================================== */
+
+.course-flow-v2 .flow-v2-happy-track {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  align-self: flex-start;
+
+  width: clamp(110px, 25%, 150px);
+
+  margin: 0 !important;
+}
+
+
+.course-flow-v2 .flow-v2-happy-track > .flowgrid-node,
+.course-flow-v2 .flow-v2-happy-track > .flowgrid-decision {
+  width: 100% !important;
+
+  min-width: 0 !important;
+  max-width: none !important;
+}
+
+
+/* ==========================================================
+   EXAMEN / CERTIFICADO
+   MISMA GEOMETRÍA
+   ========================================================== */
+
+.course-flow-v2 .flow-v2-exam {
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(105px, .9fr)
+    48px
+    minmax(180px, 1.55fr)
+    minmax(125px, 1.05fr) !important;
+
+  grid-template-rows:
+    auto
+    auto !important;
+
+  column-gap: 8px !important;
+  row-gap: 13px !important;
+
+  align-items: center !important;
+}
+
+
+/* ----------------------------------------------------------
+   SÍ PRINCIPAL -> CERTIFICADO
+   ---------------------------------------------------------- */
+
+.course-flow-v2 .exam-primary-yes {
+  grid-column: 1 !important;
+  grid-row: 1 / 3 !important;
+
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  align-items: center !important;
+  justify-content: flex-start !important;
+
+  align-self: start !important;
+
+  min-width: 0 !important;
+
+  margin: 0 !important;
+}
+
+
+.course-flow-v2 .exam-primary-yes .flowgrid-certificate {
+  width: 100% !important;
+
+  min-width: 0 !important;
+  max-width: 145px !important;
+
+  margin: 0 !important;
+}
+
+
+/* ----------------------------------------------------------
+   NO PRINCIPAL
+   ---------------------------------------------------------- */
+
+.course-flow-v2 .exam-primary-no {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+}
+
+
+/* ----------------------------------------------------------
+   RECUPERATORIO -> ¿APRUEBA?
+   TODO HORIZONTAL
+   ---------------------------------------------------------- */
+
+.course-flow-v2 .exam-recovery {
+  grid-column: 3 !important;
+  grid-row: 1 !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  gap: 5px !important;
+
+  min-width: 0 !important;
+
+  margin: 0 !important;
+}
+
+
+.course-flow-v2 .exam-recovery > .flowgrid-node {
+  flex: 0 1 88px !important;
+
+  width: 88px !important;
+  min-width: 72px !important;
+  max-width: 95px !important;
+
+  margin: 0 !important;
+}
+
+
+.course-flow-v2 .exam-recovery > .flowgrid-decision {
+  flex: 1 1 100px !important;
+
+  width: auto !important;
+
+  min-width: 90px !important;
+  max-width: 115px !important;
+
+  margin: 0 !important;
+}
+
+
+/* ----------------------------------------------------------
+   NO RECUPERATORIO -> SIN CERTIFICADO
+   ---------------------------------------------------------- */
+
+.course-flow-v2 .exam-recovery-no {
+  grid-column: 4 !important;
+  grid-row: 1 !important;
+}
+
+
+.course-flow-v2 .exam-recovery-no .flowgrid-node {
+  min-width: 90px !important;
+  max-width: 125px !important;
+}
+
+
+/* ----------------------------------------------------------
+   SÍ RECUPERATORIO -> CERTIFICADO
+   MISMA ALTURA
+   ---------------------------------------------------------- */
+
+.course-flow-v2 .exam-recovery-yes {
+  grid-column: 2 / 4 !important;
+  grid-row: 2 !important;
+}
+
+
+/* ==========================================================
+   ACCESIBILIDAD
+   ========================================================== */
+
+.course-flow-v2 .flow-v2-sr-only {
+  position: absolute !important;
+
+  width: 1px !important;
+  height: 1px !important;
+
+  padding: 0 !important;
+  margin: -1px !important;
+
+  overflow: hidden !important;
+
+  clip: rect(0, 0, 0, 0) !important;
+
+  white-space: nowrap !important;
+
+  border: 0 !important;
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (max-width: 900px) {
+
+  .course-flow-v2 .flow-v2-attendance {
+    grid-template-columns:
+      minmax(100px, .9fr)
+      42px
+      minmax(100px, 1fr)
+      minmax(110px, 1fr) !important;
+  }
+
+
+  .course-flow-v2 .flow-v2-exam {
+    grid-template-columns:
+      minmax(100px, .85fr)
+      42px
+      minmax(165px, 1.45fr)
+      minmax(110px, 1fr) !important;
+  }
+
+
+  .course-flow-v2 .flow-v2-happy-track {
+    width: clamp(105px, 24%, 140px);
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   REFLUYE, NO ESCALA
+   ========================================================== */
+
+@media (max-width: 620px) {
+
+  .course-flow-v2 .flow-v2-attendance,
+  .course-flow-v2 .flow-v2-exam {
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    gap: 10px !important;
+
+    padding-top: 8px !important;
+  }
+
+
+  .course-flow-v2 .attendance-primary-yes,
+  .course-flow-v2 .exam-primary-yes,
+  .course-flow-v2 .attendance-primary-no,
+  .course-flow-v2 .exam-primary-no,
+  .course-flow-v2 .attendance-recovery-decision,
+  .course-flow-v2 .attendance-recovery-no,
+  .course-flow-v2 .attendance-recovery-yes,
+  .course-flow-v2 .exam-recovery,
+  .course-flow-v2 .exam-recovery-no,
+  .course-flow-v2 .exam-recovery-yes {
+    width: min(100%, 280px) !important;
+
+    align-self: center !important;
+  }
+
+
+  .course-flow-v2 .flow-v2-no-entry {
+    justify-content: center !important;
+  }
+
+
+  .course-flow-v2 .flow-v2-no-exit {
+    justify-content: center !important;
+  }
+
+
+  .course-flow-v2 .flow-v2-return {
+    flex-direction: row !important;
+  }
+
+
+  .course-flow-v2 .flow-v2-happy-track {
+    align-self: center;
+
+    width: min(100%, 150px);
+  }
+
+}
+
