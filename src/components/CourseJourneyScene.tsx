@@ -1,5 +1,6 @@
 ﻿import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
+import { publicPath } from "../lib/publicPath";
 
 type JourneyStep = {
   id: string;
@@ -8,6 +9,7 @@ type JourneyStep = {
   headline: string;
   body: string;
   badge: string;
+  imageAlt: string;
 };
 
 const steps: JourneyStep[] = [
@@ -19,6 +21,7 @@ const steps: JourneyStep[] = [
     body:
       "Al terminar el recorrido vas a rendir una evaluación final sobre los contenidos trabajados durante la cursada.",
     badge: "EVALUACIÓN FINAL",
+    imageAlt: "Examen final",
   },
   {
     id: "recovery",
@@ -28,6 +31,7 @@ const steps: JourneyStep[] = [
     body:
       "Si no alcanzaste los objetivos en el examen final, vas a tener una nueva oportunidad para demostrar lo aprendido.",
     badge: "RECUPERATORIO",
+    imageAlt: "Recuperatorio",
   },
   {
     id: "approved",
@@ -37,6 +41,7 @@ const steps: JourneyStep[] = [
     body:
       "Aprobar significa haber completado correctamente el recorrido y demostrar los conocimientos fundamentales del curso.",
     badge: "APTO ✓",
+    imageAlt: "Aprobado",
   },
   {
     id: "linkedin",
@@ -46,6 +51,7 @@ const steps: JourneyStep[] = [
     body:
       "Quienes aprueben podrán fortalecer su perfil profesional y mostrar públicamente el recorrido técnico realizado.",
     badge: "LINKEDIN",
+    imageAlt: "LinkedIn",
   },
   {
     id: "opportunities",
@@ -55,6 +61,7 @@ const steps: JourneyStep[] = [
     body:
       "El conocimiento puede abrir puertas a soporte, reparación, infraestructura, proyectos, comunidad y nuevas experiencias profesionales.",
     badge: "PROYECCIÓN",
+    imageAlt: "Oportunidades",
   },
 ];
 
@@ -66,6 +73,49 @@ export function CourseJourneyScene() {
 
   const activeIndex = steps.findIndex(
     (step) => step.id === activeId
+  );
+
+  const imageSrc = publicPath(
+    `/media/course-journey/${active.number}.webp`
+  );
+
+  const contentTop = (
+    <div className="course-journey-content-top">
+      <span>ETAPA {active.number}</span>
+      <strong>{active.badge}</strong>
+    </div>
+  );
+
+  const copy = (
+    <div className="course-journey-copy">
+      {contentTop}
+
+      <motion.h2
+        initial={{ opacity: 0, x: -16 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.08 }}
+      >
+        {active.headline}
+      </motion.h2>
+
+      <motion.p
+        data-testid="journey-body"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.14 }}
+      >
+        {active.body}
+      </motion.p>
+    </div>
+  );
+
+  const image = (
+    <div className={`course-journey-visual visual-${active.id}`}>
+      <img
+        src={imageSrc}
+        alt={active.imageAlt}
+      />
+    </div>
   );
 
   return (
@@ -118,9 +168,7 @@ export function CourseJourneyScene() {
                     {step.number}
                   </span>
 
-                  <strong>
-                    {step.title}
-                  </strong>
+                  <strong>{step.title}</strong>
                 </motion.button>
               );
             })}
@@ -157,88 +205,72 @@ export function CourseJourneyScene() {
               }}
             >
 
-              <div className="course-journey-content-top">
-                <span>
-                  ETAPA {active.number}
-                </span>
-
-                <strong>
-                  {active.badge}
-                </strong>
-              </div>
-
-              <motion.h2
-                initial={{ opacity: 0, x: -16 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.08 }}
-              >
-                {active.headline}
-              </motion.h2>
-
-              <motion.p
-                data-testid="journey-body"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.14 }}
-              >
-                {active.body}
-              </motion.p>
-
-              {active.id === "approved" && (
-                <motion.div
-                  className="course-journey-approved"
-                  initial={{
-                    opacity: 0,
-                    scale: 1.5,
-                    rotate: -8,
-                  }}
-                  animate={{
-                    opacity: 1,
-                    scale: 1,
-                    rotate: -3,
-                  }}
-                  transition={{
-                    type: "spring",
-                    stiffness: 260,
-                    damping: 16,
-                  }}
-                >
-                  APTO
-                </motion.div>
-              )}
-
-              {active.id === "opportunities" && (
-                <div className="course-journey-branches">
-                  {[
-                    "SOPORTE",
-                    "REPARACIÓN",
-                    "INFRAESTRUCTURA",
-                    "PROYECTOS",
-                    "COMUNIDAD",
-                  ].map((item, index) => (
-                    <motion.span
-                      key={item}
-                      initial={{
-                        opacity: 0,
-                        y: 14,
-                      }}
-                      animate={{
-                        opacity: 1,
-                        y: 0,
-                      }}
-                      transition={{
-                        delay: 0.12 + index * 0.06,
-                      }}
-                    >
-                      {item}
-                    </motion.span>
-                  ))}
+              {active.id === "exam" && (
+                <div className="journey-layout journey-layout-exam">
+                  {image}
+                  {copy}
                 </div>
               )}
 
-              <div className="course-journey-media">
-                <span>MEDIA SLOT</span>
-              </div>
+              {active.id === "recovery" && (
+                <div className="journey-layout journey-layout-recovery">
+                  {image}
+                  {copy}
+                </div>
+              )}
+
+              {active.id === "approved" && (
+                <div className="journey-layout journey-layout-approved">
+                  {copy}
+                  {image}
+                </div>
+              )}
+
+              {active.id === "linkedin" && (
+                <div className="journey-layout journey-layout-linkedin">
+                  {image}
+                </div>
+              )}
+
+              {active.id === "opportunities" && (
+                <div className="journey-layout journey-layout-opportunities">
+                  {copy}
+
+                  <div className="course-journey-branches">
+                    {[
+                      "SOPORTE",
+                      "REPARACIÓN",
+                      "INFRAESTRUCTURA",
+                      "PROYECTOS",
+                      "COMUNIDAD",
+                    ].map((item, index) => (
+                      <motion.span
+                        key={item}
+                        initial={{
+                          opacity: 0,
+                          y: 14,
+                        }}
+                        animate={{
+                          opacity: 1,
+                          y: 0,
+                        }}
+                        transition={{
+                          delay: 0.12 + index * 0.06,
+                        }}
+                      >
+                        {item}
+                      </motion.span>
+                    ))}
+                  </div>
+
+                  <div className="course-journey-media journey-footer-media">
+                    <img
+                      src={imageSrc}
+                      alt={active.imageAlt}
+                    />
+                  </div>
+                </div>
+              )}
 
             </motion.div>
           </AnimatePresence>

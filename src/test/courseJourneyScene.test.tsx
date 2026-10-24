@@ -21,11 +21,58 @@ describe("Slide 05 recorrido del curso", () => {
     render(<CourseJourneyScene />);
 
     fireEvent.click(
+      screen.getByRole("button", { name: /Recuperatorio/i })
+    );
+
+    expect(
+      await screen.findByText(/Una segunda instancia/i)
+    ).toBeTruthy();
+  });
+});
+
+describe("Media del recorrido final", () => {
+  it("usa la imagen correspondiente en cada etapa", async () => {
+    render(<CourseJourneyScene />);
+
+    expect(
+      screen.getByRole("img", { name: /examen final/i })
+    ).toBeTruthy();
+
+    fireEvent.click(
+      screen.getByRole("button", { name: /Recuperatorio/i })
+    );
+
+    expect(
+      await screen.findByRole("img", { name: /recuperatorio/i })
+    ).toBeTruthy();
+
+    fireEvent.click(
+      screen.getByRole("button", { name: /Aprobado/i })
+    );
+
+    expect(
+      await screen.findByRole("img", { name: /aprobado/i })
+    ).toBeTruthy();
+
+    fireEvent.click(
       screen.getByRole("button", { name: /LinkedIn/i })
     );
 
     expect(
-      await screen.findByText(/recomendación profesional/i)
+      await screen.findByRole("img", { name: /linkedin/i })
+    ).toBeTruthy();
+
+    expect(
+      screen.queryByText(/Recomendación profesional/i)
+    ).toBeNull();
+
+    fireEvent.click(
+      screen.getByRole("button", { name: /Oportunidades/i })
+    );
+
+    expect(
+      await screen.findByRole("img", { name: /oportunidades/i })
     ).toBeTruthy();
   });
 });
+
